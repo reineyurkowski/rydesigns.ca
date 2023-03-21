@@ -86,6 +86,18 @@ function Footer() {
         </div>
 
       </div>
+
+      <div id='horizontalRow'>
+          <p id='disclaimer'>
+            Disclaimer: 
+            <br/>
+            The content on this webpage may contain copyrighted material or intellectual property owned by third parties. 
+            <br/>
+            We do not claim ownership over any of the images, videos, or other media that may appear on this website. 
+            <br/>
+            All trademarks, logos, and service marks displayed on this website are the property of their respective owners.
+          </p>
+      </div>
     </footer>
   )
 }

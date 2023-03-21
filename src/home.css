@@ -2,9 +2,14 @@
   --titleImageFilterOutlineSize: 10px;
 }
 
+#disclaimer {
+  max-width: 30rem;
+}
+
 footer{
   padding-bottom: 3rem;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
+  color: white;
 }
 
 #horizontalRow {
@@ -12,6 +17,7 @@ footer{
     justify-content: space-around;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-top: 3rem;
 }
   #footerReineYurkowskiSignature {
     aspect-ratio: auto;
@@ -68,9 +74,9 @@ footer{
   
     } */
     #titleImageFlair:nth-child(1){
-        animation-duration: 12s;
-        filter: hue-rotate(-420deg) 
-                sepia(60%);
+        animation-duration: 18s;
+        filter: hue-rotate(-460deg) 
+                sepia(40%);
                 /* drop-shadow(10px 10px) 
                 drop-shadow(10px -10px) 
                 drop-shadow(-10px 10px) 
@@ -81,7 +87,7 @@ footer{
           top:30%;
     }
     #titleImageFlair:nth-child(2){
-        animation-duration: 10s;
+        animation-duration: 12s;
         filter: hue-rotate(-69deg) 
                 sepia(30%);
                 /* drop-shadow(10px 10px) 

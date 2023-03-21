@@ -2,7 +2,7 @@ import './home.css'
 
 function Home() {
   return (
-    <div>
+    <div id='home'>
       <h1 id='title'>
         Good Designs <br/> Can Set Things In Motion
       </h1>
@@ -23,6 +23,8 @@ function Home() {
           src='./src/assets/roundedSquare.svg'
         />
       </div>
+
+
     </div>
     
   )
