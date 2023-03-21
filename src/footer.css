@@ -1,0 +1,21 @@
+footer {
+  aspect-ratio: auto;
+    height: auto;
+    width: 100%;
+  background-color: var(--backgroundColor2);
+  position: absolute;
+    bottom: 0px;
+}
+
+#footerSocials {
+  
+}
+  #footerSocials>*>img {
+    aspect-ratio: 1/1;
+      max-height: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  #linkedInLogo {
+    filter: brightness(10); /* 0-1 is darker, above is brighter */
+  }

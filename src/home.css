@@ -1,0 +1,107 @@
+:root {
+  --titleImageFilterOutlineSize: 10px;
+}
+
+footer{
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+#horizontalRow {
+  display: flex;
+    justify-content: space-around;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+  #footerReineYurkowskiSignature {
+    aspect-ratio: auto;
+      min-width: 20rem;
+      max-width: 25rem;
+    filter:invert(1);
+    flex:1;
+  }
+  #footerContact {
+    display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    flex:1;
+  }
+    #footerContact>*:link,
+    #footerContact>*:visited{
+      color: white;
+      text-decoration: none;
+    }
+  #footerSocials {
+    flex:1;
+    padding-top: 1.2rem;
+    text-align: center;
+  }
+
+
+
+#title {
+  position: absolute;
+    top: 60vh;
+    left:13vw;
+  z-index: 10;
+}
+#titleImage {
+  aspect-ratio: 2/1;
+  overflow: hidden;
+  background-image: linear-gradient(-18deg, #00658F, #1b3156);
+}
+  #titleImageFlair {
+    animation-name: titleImageFlairRotation;
+      /* -moz-animation-iteration-count: infinite; */
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    position:relative;
+  }
+  @keyframes titleImageFlairRotation {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+  }
+  #titleImageFlair:hover {
+    filter:contrast(100);
+  }
+    /* #titleImageFlair>* {
+  
+    } */
+    #titleImageFlair:nth-child(1){
+        animation-duration: 12s;
+        filter: hue-rotate(-420deg) 
+                sepia(60%);
+                /* drop-shadow(10px 10px) 
+                drop-shadow(10px -10px) 
+                drop-shadow(-10px 10px) 
+                drop-shadow(-10px -10px); */;
+        scale: 1.2;
+        position:relative;
+          left:-15%;
+          top:30%;
+    }
+    #titleImageFlair:nth-child(2){
+        animation-duration: 10s;
+        filter: hue-rotate(-69deg) 
+                sepia(30%);
+                /* drop-shadow(10px 10px) 
+                drop-shadow(10px -10px) 
+                drop-shadow(-10px 10px) 
+                drop-shadow(-10px -10px); */;
+        scale: 1;
+        position:relative;
+          left:30%;
+          top:-180%;
+    }
+    #titleImageFlair:nth-child(3){
+      animation-duration: 8s;
+      filter: hue-rotate(-40deg) 
+                /* drop-shadow(10px 10px) 
+                drop-shadow(10px -10px) 
+                drop-shadow(-10px 10px) 
+                drop-shadow(-10px -10px); */;
+      scale: 1.2;
+      position:relative;
+        left:0%;
+        top:-350%;
+  }
