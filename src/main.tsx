@@ -37,3 +37,21 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Footer />
   </React.StrictMode>,
 )
+
+// function MyComponent() {
+//   const [loading, setLoading] = useState(true);
+
+//   useEffect(() => {
+//     setLoading(false);
+//   }, []);
+
+//   if (loading) {
+//     return <div>Loading...</div>;
+//   }
+
+//   return (
+//     <div>
+//       {/* your component content */}
+//     </div>
+//   );
+// }

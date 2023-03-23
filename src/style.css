@@ -1,13 +1,14 @@
 :root {
-  --color1: #F3008D;
+  --color1: #FF0011;
   --color2: #000000;
   --color3: #ffFFff;
 
-  --backgroundColor1: var(--color1);
-  --backgroundColor2: var(--color2);
+  --backgroundColor1: var(--color2);
+  --backgroundColor2: var(--color3);
 
   --textColor1: var(--color2);
   --textColor2:  var(--color1);
+  --textColor3:  var(--color3);
   --textColorTitles: var(--color3);
 
   --shadowColor: var(--color2);

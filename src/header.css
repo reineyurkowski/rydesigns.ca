@@ -1,7 +1,9 @@
+@import "./style.css";
+
 header {
   aspect-ratio: auto;
     height: var(--headerHeight);
-  background-color: var(--backgroundColor2);
+  background-color: var(--backgroundColor1);
   color: var(--textColorTitles);
   display: flex;
     justify-content: space-evenly;

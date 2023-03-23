@@ -13,7 +13,7 @@ function Footer() {
           >
             <img  
               id="footerReineYurkowskiSignature"
-              src="./src/assets/mediaKits/reineYurkowskiAssets/full.svg"
+              src="./src/assets/mediaKits/reineYurkowskiAssets/fullThicc.svg"
               alt='twitter logo'
             />
           </a>

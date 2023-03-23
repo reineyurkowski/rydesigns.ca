@@ -1,15 +1,5 @@
-footer {
-  aspect-ratio: auto;
-    height: auto;
-    width: 100%;
-  background-color: var(--backgroundColor2);
-  position: absolute;
-    bottom: 0px;
-}
+@import './style.css';
 
-#footerSocials {
-  
-}
   #footerSocials>*>img {
     aspect-ratio: 1/1;
       max-height: 3rem;
@@ -19,3 +9,55 @@ footer {
   #linkedInLogo {
     filter: brightness(10); /* 0-1 is darker, above is brighter */
   }
+
+  #disclaimer {
+    max-width: 30rem;
+  }
+  
+  footer{
+    aspect-ratio: auto;
+      height: auto;
+      width: 100%;
+    background-color: var(--backgroundColor2);
+    /* position: absolute;
+      bottom: 0px; */
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    /* padding-top: 3rem; */
+  }
+  footer>* {
+    color: var(--textColor2);
+  }
+  
+  #horizontalRow {
+    display: flex;
+      justify-content: space-around;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+  }
+    #footerReineYurkowskiSignature {
+      aspect-ratio: auto;
+        min-width: 20rem;
+        max-width: 25rem;
+      /* filter:invert(1); */
+      flex:1;
+    }
+    #footerContact {
+      text-align: right;
+      display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      flex:1;
+    }
+      #footerContact>*:link,
+      #footerContact>*:visited{
+        color: var(--textColor1);
+        text-decoration: none;
+      }
+    #footerSocials {
+      filter:invert(1);
+      flex:1;
+      padding-top: 1.2rem;
+      text-align: center;
+    }
