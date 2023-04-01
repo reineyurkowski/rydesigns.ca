@@ -97,17 +97,17 @@ function Home2() {
           <div id="titleImage">
             <img 
               id='titleImageFlair'
-              src='./src/assets/roundedSquare.svg'
+              src='/src/assets/roundedSquare.svg'
               alt="rounded squares rotating clockwise"
             />
             <img 
               id='titleImageFlair'
-              src='./src/assets/roundedSquare.svg'
+              src='/src/assets/roundedSquare.svg'
               alt="rounded squares rotating clockwise"
             />
             <img 
               id='titleImageFlair'
-              src='./src/assets/roundedSquare.svg'
+              src='/src/assets/roundedSquare.svg'
               alt="rounded squares rotating clockwise"
             />
           </div>
