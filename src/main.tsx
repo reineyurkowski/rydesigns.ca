@@ -13,12 +13,18 @@ import Header from './header'
 import Home from './home'
 import Footer from './footer'
 import Welcome from './welcome'
+import Home2 from './home2'
+import MouseShadow from './mouseShadow'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: <Home2 />,
+  },
+  {
+    path: '/home',
+    element: <Home2 />,
   },
   // {
   //   path: '/home',
@@ -26,7 +32,7 @@ const router = createBrowserRouter([
   // },
   {
     path: '/test',
-    element: <div><div>you are on /test</div><Home /></div>,
+    element: <div><div>you are on /test</div><Home2 /></div>,
   }
 ])
 
@@ -35,6 +41,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Header />
       <RouterProvider router={router} />
     <Footer />
+    {/* <MouseShadow /> */}
   </React.StrictMode>,
 )
 

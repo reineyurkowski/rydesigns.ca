@@ -1,0 +1,95 @@
+@import "./style.css";
+
+#home2Container {
+  background:
+    radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);
+    background-position: 0vmin, 0vmin;
+    background-size: 5vmin 5vmin;   
+  animation-name: backgroundAnimation;
+    animation-duration: 4s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  #home2Container {
+    background-size: 15vmin 15vmin;   
+  }
+}
+
+#home2Container p, #home2Container pre {
+  color: white !important;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0vmin, 0vmin;
+  }
+  100% {
+    background-position: 15vmin, 15vmin;
+  }
+}
+
+
+
+
+#imageSectionContainer {
+  aspect-ratio: auto;
+    /* height: 50vh; */
+    /* width: 100%; */
+  /* background-color: #111; */
+  display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    grid-template-rows: auto;
+    gap: 0;
+}
+@media (max-width: 600px) {
+  #imageSectionContainer{
+    flex-direction: column-reverse !important;
+    min-width: 90vw;
+  }
+}
+  #imageSectionContainer>div {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  @media (max-width: 600px) {
+    div#imageSectionContainer {
+      padding:0px !important;
+      margin:0px !important;
+    }
+
+    #imageSectionContainer img{
+      min-width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+  #imageSectionContainer>div:nth-child(even) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+    #imageSectionContainer>div>img {
+      aspect-ratio: auto;
+        /* max-height: 50vw; */
+        min-width: 50vw;
+      filter: drop-shadow(var(--textColor2) 0 1rem 0);
+      padding-bottom: 4px;
+      margin: 0;
+    }
+    #imageSectionContainer>div>h3 {
+      color: var(--textColor2);
+    }
+
+/* @media screen and (max-width: 600px) {
+  #imageSectionContainer {
+    flex-direction: column-reverse;
+  }
+} */
+
+#imageSectionContainer>div>p {
+  color: white;
+}

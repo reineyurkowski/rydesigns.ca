@@ -10,6 +10,34 @@ header {
   padding-top: 1rem;
   text-decoration: none;
 }
+@media (max-width: 600px) {
+  header {
+    display: block;
+    position: sticky;
+    width: 100%;
+    height: 100svh;
+    z-index: 100;
+    flex-direction: column;
+  }
+}
+
+header {
+  background:
+    radial-gradient(rgba(255, 255, 255, 0.2) 8%, black 8%);
+    background-position: 0vmin, 0vmin;
+    background-size: 5vmin 5vmin;   
+  animation-name: backgroundAnimation;
+    animation-duration: 4s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  #home2Container {
+    background-size: 15vmin 15vmin;   
+  }
+}
+
   header>* {
     flex: 1;
     text-align: center;
@@ -35,9 +63,21 @@ header {
     padding-left: var(--headerSpacing);
     filter:invert(100);
   }
+  @media (max-width: 600px) {
+    header>a:first-child {
+      padding-left: 0px;
+      text-align: center;
+    }
+  }
   header>a:last-child {
     text-align: right;
     padding-right: var(--headerSpacing);
+  }
+  @media (max-width: 600px) {
+    header>a:last-child {
+      text-align: center;
+      padding-right: 0px;
+    }
   }
     /* header>a>div {
       max-height: 100%;
@@ -56,3 +96,7 @@ header {
           top:0px;
         transform: translate(0px, -0.4rem);
       }
+
+/* @media (max-width: 600px) {
+  
+} */

@@ -7,7 +7,86 @@
     <title>RY</title>
   </head>
   <body>
+    <!-- this is a bonus loading screen incase the internet is slow -->
+    <!-- <div id="loading-screen">
+      slow connection detected, 
+      <br/>
+      <br/>
+      please wait while 
+      <br/>
+      <br/>
+      <h2>Loading...</h2>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div id="spinnerContainer">
+        <h3 id="spinner">🌮</h3>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <p>
+        fun fact:
+        <br/>
+        <br/>
+        The first-ever email was sent by computer engineer Ray Tomlinson in 1971. The message was just a series of letters and numbers, and Tomlinson doesn't remember exactly what he wrote.
+      </p>
+    </div>
+    <script>
+      // Show the loading screen
+      const loadingScreen = document.getElementById("loading-screen");
+      loadingScreen.style.display = "block";
+
+      // Wait for the page to load
+      window.addEventListener("load", () => {
+        // Hide the loading screen
+        loadingScreen.style.display = "none";
+      });
+    </>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      #loading-screen {
+        aspect-ratio: auto;
+          height: 100vh;
+          width: 100vw;
+        background-color: #222;
+        color: #fff;
+        margin:0;
+        padding:0;
+        font-family: sans-serif;
+        transition-duration: 0ms;
+      }
+      #spinnerContainer {
+        text-align: center;
+        transition-duration: 0ms;
+      }
+        #spinner {
+          animation: rotate 4s linear infinite;
+          font-size: 3rem;
+          transition-duration: 0ms;
+        }
+        @keyframes rotate {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+    </style> -->
+
+   
+    
+    
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx">
+    </script>
   </body>
 </html>
