@@ -98,14 +98,17 @@ function Home2() {
             <img 
               id='titleImageFlair'
               src='./src/assets/roundedSquare.svg'
+              alt="rounded squares rotating clockwise"
             />
             <img 
               id='titleImageFlair'
               src='./src/assets/roundedSquare.svg'
+              alt="rounded squares rotating clockwise"
             />
             <img 
               id='titleImageFlair'
               src='./src/assets/roundedSquare.svg'
+              alt="rounded squares rotating clockwise"
             />
           </div>
         </div>
@@ -114,7 +117,7 @@ function Home2() {
       <br/>
       <br/>
 
-      <span>
+      <div>
         {SectionImage(
           './src/assets/images/boogieBoard.jpg',
           'small child on a boogie board taken by Reine Yurkowski in tofino bc',
@@ -126,8 +129,8 @@ function Home2() {
           <br/>
           My story is one of dedication, hard work, and a deep love for what I do. I believe that every project I take on is an opportunity to showcase my skills and bring something truly unique to the table.`
         )}
-      </span>
-      <span>
+      </div>
+      <div>
         {SectionImage(
           'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80',
           'picture of some sushi from unsplash from Derek Duran',
@@ -142,9 +145,9 @@ function Home2() {
           <br/>
           Whether you're looking for a simple, informative site or a more complex store-front, I have the skills and experience to get the job done right.`
         )}
-      </span>
+      </div>
 
-      <span>
+      <div>
         {SectionImage(
           './src/assets/images/camera.jpg',
           'a picture of a canon camera pointed at a female surfer in the distance',
@@ -156,8 +159,8 @@ function Home2() {
           <br/>
           Whether you're looking for stunning headshots, beautiful family portraits, or eye-catching product photography, I can help you create the perfect image that truly captures who you are.`
         )}
-      </span>
-      <span>
+      </div>
+      <div>
         {SectionImage(
           './src/assets/images/skull.jpg',
           'a hand drawn fox skull with various fauna growing out of it by Reine Yurkowski',
@@ -172,9 +175,9 @@ function Home2() {
           <br/>
           Let's work together to make your brand truly stand out from the crowd.`
         )}
-      </span>
+      </div>
 
-      <span>
+      <div>
         {SectionImage(
           'https://images.unsplash.com/photo-1643930825365-af2452a0acc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80',
           'handicapped sign on a wood post by Jakub Pabis',
@@ -189,8 +192,8 @@ function Home2() {
           <br/>
           This means ensuring that the website is easy to navigate, the content is readable, and the design is inclusive of all users, including those with visual, auditory, or motor impairments.`
         )}
-      </span>
-      <span>
+      </div>
+      <div>
         {SectionImage(
           'https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
           'photo of code on a screen by Markus Spiske',
@@ -202,9 +205,9 @@ function Home2() {
           <br/>
           This allows for cleaner, more sophisticated styling, with animations, and dynamic interactive functionality on web pages. `
         )}
-      </span>
+      </div>
 
-      <span>
+      <div>
         <div id='imageSectionContainer' style={
           'left' == 'left' 
           ? {
@@ -237,12 +240,14 @@ function Home2() {
           <div>
             <h3 id={''} className=''>INTERESTED? LET'S CHAT</h3>
             <p>
+              <h4>phone:</h4>
               <a href='tel:+1-(250)-216-2556'>
                 +1·(250)·216·2556
               </a>
               <br/>
               <br/>
               <br/>
+              <h4>email:</h4>
               <a href='mailto:reineyurkowski@gmail.com'>
                 reineyurkowski@gmail.com
               </a>
@@ -260,7 +265,7 @@ function Home2() {
             />
           </div>
         </div>
-      </span>
+      </div>
     </div>
   )
 }

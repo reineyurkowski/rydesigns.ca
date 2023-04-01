@@ -1,32 +1,53 @@
 import './header.css'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Logo() {
-  let headerHeightValueSmall = '2.5rem'
-  let headerHeightValueLarge = '100vh'
+  const [headerHeight, setHeaderHeight] = useState("2.5rem");
+  const [headerDisplay, setHeaderDisplay] = useState("flex");
 
-  const [headerHeight, setHeaderHeight] = useState(headerHeightValueSmall);
-  const [headerDisplay, setHeaderDisplay] = useState("block");
-  const [headerBottomPadding, setHeaderBottomPadding] = useState('3rem')
+  const [headerPositionType, setHeaderPositionType] = useState("sticky");
+
+  const [headerLogoPaddingBottom, setHeaderLogoPaddingBottom] = useState("");
+
+  useEffect(() => {
+    // Check browser window size and set header type
+    const setHeaderType = () => {
+      if (window.innerWidth > 600) {
+        //setting for mobile
+        setHeaderDisplay("flex");
+        setHeaderLogoPaddingBottom('0rem');
+      } else {
+        //setting for desktop
+        setHeaderDisplay("block");
+        setHeaderLogoPaddingBottom('3rem');
+      }
+    };
+    setHeaderType(); // call the function once to set the initial header type
+
+    // Add event listener to update header type when window is resized
+    window.addEventListener("resize", setHeaderType);
+
+    // Cleanup function to remove event listener when component unmounts
+    return () => {
+      window.removeEventListener("resize", setHeaderType);
+    };
+  }, []); // only run effect once on mount
 
   const handleLogoClick = () => {
     if (window.innerWidth <= 600) {
-      if (headerHeight === headerHeightValueSmall) {
+      if (headerHeight === "2.5rem") {
         setHeaderHeight("100vh");
         setHeaderDisplay("flex");
-      } else if (headerHeight === headerHeightValueLarge) {
-        setHeaderHeight("3rem");
+      } else if (headerHeight === "100vh") {
+        setHeaderHeight("2.5rem");
         setHeaderDisplay("block");
       }
     }
   };
 
   return (
-    <a 
-      href={window.innerWidth > 600 ? "/home" : undefined} 
-      onClick={handleLogoClick}
-      >
+    <a href={window.innerWidth > 600 ? "/home" : undefined} onClick={handleLogoClick}>
       <div id="logo">
         <img
           src="./src/assets/mediaKits/reineYurkowskiAssets/initialsThicc.svg"
@@ -35,12 +56,14 @@ function Logo() {
         />
       </div>
       <style>
-        {`#header {
+        {`
+        #header {
           height: ${headerHeight};
           display: ${headerDisplay};
+          
         }
         #logo {
-          margin-bottom: ${headerBottomPadding};
+          padding-bottom: ${headerLogoPaddingBottom}
         }
         `}
       </style>
@@ -50,18 +73,44 @@ function Logo() {
 
 
 
+
 function Header() {
-  
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [headerHeight, setHeaderHeight] = useState("3rem");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        setHeaderHeight("3rem");
+      } else {
+        setHeaderHeight("0.0rem");
+      }
+      setPrevScrollPos(currentScrollPos);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
 
   return (
-    <header id='header'>
+    <header id="header" style={{ height: headerHeight }}>
       <Logo />
 
       <div></div>
-      <a href='/home'><div>HOME</div></a>
-      <a href='/about'><div>ABOUT</div></a>
-      <a href='/pricing'><div>PRICING</div></a>
-      <a href='/contact'><div>CONTACT</div></a>
+      <a href="/home">
+        <div>HOME</div>
+      </a>
+      <a href="/about">
+        <div>ABOUT</div>
+      </a>
+      <a href="/pricing">
+        <div>PRICING</div>
+      </a>
+      <a href="/contact">
+        <div>CONTACT</div>
+      </a>
       <div></div>
       <a href="mailto: reineyurkowski@gmail.com">
         <div>EMAIL</div>
@@ -70,7 +119,8 @@ function Header() {
         <div>PHONE</div>
       </a>
     </header>
-  )
+  );
 }
+
 
 export default Header;

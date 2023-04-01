@@ -10,11 +10,16 @@
     animation-timing-function: linear; 
     animation-iteration-count: infinite;
   overflow: hidden;
+  display: block;
 }
 @media (max-width: 600px) {
   #home2Container {
     background-size: 15vmin 15vmin;   
   }
+}
+
+#home2Container {
+  display: block;
 }
 
 #home2Container p, #home2Container pre {
@@ -38,6 +43,7 @@
 #imageSectionContainer {
   aspect-ratio: auto;
     /* height: 50vh; */
+    max-height:75svh;
     /* width: 100%; */
   /* background-color: #111; */
   display: grid;
@@ -73,9 +79,9 @@
     grid-row-end: 3;
   }
     #imageSectionContainer>div>img {
-      aspect-ratio: auto;
-        /* max-height: 50vw; */
-        min-width: 50vw;
+      aspect-ratio: fixed;
+        max-height: 50vw;
+        /* git min-width: 50vw; */
       filter: drop-shadow(var(--textColor2) 0 1rem 0);
       padding-bottom: 4px;
       margin: 0;

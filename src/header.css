@@ -9,6 +9,10 @@ header {
     justify-content: space-evenly;
   padding-top: 1rem;
   text-decoration: none;
+
+  position: sticky;
+  top:0px;
+  z-index: 100;
 }
 @media (max-width: 600px) {
   header {
@@ -41,6 +45,7 @@ header {
   header>* {
     flex: 1;
     text-align: center;
+    top:0px;
   }
   header>*:hover{
     scale:1.1;
