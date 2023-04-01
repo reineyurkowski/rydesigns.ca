@@ -12,8 +12,8 @@ function MouseShadow() {
       const mouseY = e.pageY - window.scrollY;
 
       // Update the position of the shadow element
-      shadow.style.left = mouseX + 'px';
-      shadow.style.top = mouseY + 'px';
+      // shadow.style.left = mouseX + 'px';
+      // shadow.style.top = mouseY + 'px';
     });
 
     return () => {
