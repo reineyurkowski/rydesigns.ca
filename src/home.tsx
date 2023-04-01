@@ -47,15 +47,15 @@ function Home() {
         <div id="titleImage">
           <img 
             id='titleImageFlair'
-            src='./src/assets/roundedSquare.svg'
+            src='/src/assets/roundedSquare.svg'
           />
           <img 
             id='titleImageFlair'
-            src='./src/assets/roundedSquare.svg'
+            src='/src/assets/roundedSquare.svg'
           />
           <img 
             id='titleImageFlair'
-            src='./src/assets/roundedSquare.svg'
+            src='/src/assets/roundedSquare.svg'
           />
         </div>
       </div>
