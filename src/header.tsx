@@ -50,7 +50,7 @@ function Logo() {
   };
 
   return (
-    <a href={window.innerWidth > 600 ? "/home" : undefined} onClick={handleLogoClick}>
+    <a href={window.innerWidth > 600 ? "/" : undefined}> //onClick={handleLogoClick}>
       <div id="logo">
         <img
           src={initialsThicc}
