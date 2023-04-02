@@ -1,0 +1,37 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE html>
+<html dir="ltr" lang="en-CA"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'">
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" media="screen, projection" type="text/css" href="Advanced%20Preferences_files/common.css">
+    <link rel="stylesheet" media="screen, projection" type="text/css" href="Advanced%20Preferences_files/info-pages.css" title="infop">
+    <link rel="stylesheet" type="text/css" href="Advanced%20Preferences_files/aboutconfig.css">
+    <link rel="localization" href="branding/brand.ftl">
+    <link rel="localization" href="toolkit/about/config.ftl">
+    <link rel="icon" href="chrome://global/skin/icons/settings.svg">
+    <script src="Advanced%20Preferences_files/aboutconfig.js"></script>
+    <title data-l10n-id="about-config-page-title">Advanced Preferences</title>
+  </head>
+  <body class="table-shown">
+      <div id="toolbar">
+        <!-- Use a unique ID to prevent showing autocomplete results from other
+             browser pages with similarly named fields. -->
+        <input type="text" id="about-config-search" data-l10n-id="about-config-search-input1" placeholder="Search preference name" value="layout.css.devPixelsPerPx">
+        <label class="checkbox-container">
+          <input type="checkbox" id="about-config-show-only-modified" checked="checked">
+          <span data-l10n-id="about-config-show-only-modified">Show only modified preferences</span>
+        </label>
+      </div>
+
+      <table id="prefs" has-visible-prefs=""><tr class=""><th scope="row"><span>layout.<wbr>css.<wbr>devPixelsPerPx</span></th><td class="cell-value"><form id="form-edit"><input type="text" value="-4.0"></form></td><td class="cell-edit"><button data-l10n-id="about-config-pref-save-button" class="primary button-save semi-transparent" title="Save" form="form-edit"></button></td><td class="cell-reset"></td></tr></table>
+
+      <div class="config-background-wrapper">
+        <button id="show-all" class="ghost-button" data-l10n-id="about-config-show-all">Show All</button>
+        <div class="config-background"></div>
+        <p class="config-help-text" data-l10n-id="about-config-caution-text">Changing these preferences can impact Firefox Developer Edition performance or security.</p>
+      </div>
+    </body></html>
