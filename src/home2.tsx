@@ -249,11 +249,12 @@ function Home2() {
           </style>
           <div>
             <h3 id={''} className=''>INTERESTED? LET'S CHAT</h3>
+            <h4>phone:</h4>
             <p>
-              <h4>phone:</h4>
               <a href='tel:+1-(250)-216-2556'>
                 +1·(250)·216·2556
               </a>
+            </p>
               <br/>
               <br/>
               <br/>
@@ -261,7 +262,6 @@ function Home2() {
               <a href='mailto:reineyurkowski@gmail.com'>
                 reineyurkowski@gmail.com
               </a>
-            </p>
           </div>
           <div>
             <img style={{

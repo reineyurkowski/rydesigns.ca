@@ -1,2 +1,27 @@
 @import "./style.css";
 
+header {
+  aspect-ratio: auto;
+    min-height: 32px;
+  color: white;
+  display: grid;
+    grid-template-columns: repeat(auto-fit, mixmax(240px, 1fr));
+  position: sticky;
+}
+
+.headerItem {
+  align-content: center;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:1rem;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .headerItem {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+  

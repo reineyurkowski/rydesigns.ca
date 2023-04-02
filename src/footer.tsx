@@ -10,7 +10,7 @@ function Footer() {
 
         <div id='footerSignature'>
           <a
-            href='/home'
+            href='/'
             target='_blank'
           >
             <img  
