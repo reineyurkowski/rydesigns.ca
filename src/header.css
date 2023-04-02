@@ -14,7 +14,7 @@ header {
   top:0px;
   z-index: 100;
 }
-@media (max-width: 30rem) and (orientation: landscape) {
+@media (max-width: 30rem) {
   header {
     display: block;
     position: sticky;
