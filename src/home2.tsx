@@ -50,7 +50,7 @@ function Home2() {
               {index !== paragraph.length - 1 && <br />}
             </React.Fragment>
           ))}
-        </p>
+          </p>
         </div>
         <div style={{order: side === 'left' ? 1 : 2}}>
           <img style={
