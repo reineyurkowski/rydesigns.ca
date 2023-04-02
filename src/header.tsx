@@ -50,7 +50,7 @@ function Logo() {
     <a href={window.innerWidth > 600 ? "/home" : undefined} onClick={handleLogoClick}>
       <div id="logo">
         <img
-          src="./src/assets/mediaKits/reineYurkowskiAssets/initialsThicc.svg"
+          src="/assets/mediaKits/reineYurkowskiAssets/initialsThicc.svg"
           alt="Reine Yurkowski's signature"
           style={{ transform: "scaleX(1.5) skew(10deg, 10deg)" }}
         />
