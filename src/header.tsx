@@ -2,6 +2,9 @@ import './header.css'
 
 import { useState, useEffect } from "react";
 
+//images
+import initialsThicc from "./src/assets/mediaKits/reineYurkowskiAssets/initialsThicc.svg"
+
 function Logo() {
   const [headerHeight, setHeaderHeight] = useState("2.5rem");
   const [headerDisplay, setHeaderDisplay] = useState("flex");
@@ -50,7 +53,7 @@ function Logo() {
     <a href={window.innerWidth > 600 ? "/home" : undefined} onClick={handleLogoClick}>
       <div id="logo">
         <img
-          src="/assets/mediaKits/reineYurkowskiAssets/initialsThicc.svg"
+          src={initialsThicc}
           alt="Reine Yurkowski's signature"
           style={{ transform: "scaleX(1.5) skew(10deg, 10deg)" }}
         />
