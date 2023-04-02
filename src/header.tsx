@@ -99,7 +99,7 @@ function Header() {
       <Logo />
 
       <div></div>
-      <a href="/home">
+      {/* <a href="/home">
         <div>HOME</div>
       </a>
       <a href="/about">
@@ -110,7 +110,7 @@ function Header() {
       </a>
       <a href="/contact">
         <div>CONTACT</div>
-      </a>
+      </a> */}
       <div></div>
       <a href="mailto: reineyurkowski@gmail.com">
         <div>EMAIL</div>
