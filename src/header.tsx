@@ -3,7 +3,7 @@ import './header.css'
 import { useState, useEffect } from "react";
 
 //images
-import initialsThicc from "./src/assets/mediaKits/reineYurkowskiAssets/initialsThicc.svg"
+import initialsThicc from "../src/assets/mediaKits/reineYurkowskiAssets/initialsThicc.svg"
 
 function Logo() {
   const [headerHeight, setHeaderHeight] = useState("2.5rem");
