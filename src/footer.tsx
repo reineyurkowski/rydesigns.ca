@@ -33,6 +33,26 @@ function Footer() {
             />
           </a>
           <a 
+            href='https://www.facebook.com/ryDesignsBC/'
+            target='_blank'
+          >
+            <img  
+              id="facebookLogo"
+              src={assets.facebookLogo}
+              alt='facebook logo'
+            />
+          </a>
+          <a
+            href='https://www.instagram.com/reineyurkowski/'
+            target='_blank'
+          >
+            <img  
+              id="instagramLogo"
+              src={assets.instagramLogo}
+              alt='instagram logo'
+            />
+          </a>
+          <a 
             href='https://www.linkedin.com/in/reine-y-326025a9/'
             target='_blank'
           >
@@ -42,7 +62,7 @@ function Footer() {
               alt='linked in logo'
             />
           </a>
-          <a
+          {/* <a
             href='https://linktr.ee/reineyurkowski'
             target='_blank'
           >
@@ -51,7 +71,7 @@ function Footer() {
               src={assets.linktreeLogo}
               alt='linktree logo'
             />
-          </a>
+          </a> */}
           <a
             href='https://twitter.com/reineyurkowski'
             target='_blank'
@@ -77,14 +97,14 @@ function Footer() {
         </div>
 
         <div id="footerContact">
-          <div></div>
+          <br/>
           <a href="tel:+1-(250)-216-2556">
             phone: +1-(250)-256-2556
           </a>
           <a href="mailto:reineyurkowski@gmail.com">
             email: reineyurkowski@gmail.com
           </a>
-          <div></div>
+          <br/>
         </div>
 
       </div>

@@ -1,15 +1,5 @@
 @import './style.css';
 
-  #footerSocials>*>img {
-    aspect-ratio: 1/1;
-      max-height: 3rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  #linkedInLogo {
-    filter: brightness(10); /* 0-1 is darker, above is brighter */
-  }
-
   #disclaimer {
     max-width: 30rem;
     color: black;
@@ -56,10 +46,10 @@
       align-content: center;
     }
     #footerContact {
-      text-align: right;
+      text-align: left;
       display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
       flex:1;
     }
     @media (max-width: 600px) {
@@ -70,10 +60,11 @@
       #footerContact>*:link,
       #footerContact>*:visited{
         color: var(--textColor1);
-        text-decoration: none;
+        text-decoration: underline;
       }
     #footerSocials {
-      aspect-ratio: 1/1;
+      /* aspect-ratio: 1/1; */
+        height:auto;
       filter:invert(1);
       flex:1;
       padding-top: 1.2rem;
@@ -82,4 +73,13 @@
     #footerSocials img {
       width: auto;
       height: 100%;
+    }
+        #footerSocials>*>img {
+          aspect-ratio: 1/1;
+            max-height: 3rem;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+        }
+    #linkedInLogo {
+      filter: brightness(10); /* 0-1 is darker, above is brighter */
     }
