@@ -3,7 +3,7 @@ import './header.css'
 import { useState, useEffect } from "react";
 
 //images
-import initialsThicc from "../src/assets/mediaKits/reineYurkowskiAssets/initialsThicc.svg"
+import assets from './assets/assetIndex';
 
 function Logo() {
   const [headerHeight, setHeaderHeight] = useState("2.5rem");
@@ -50,10 +50,10 @@ function Logo() {
   };
 
   return (
-    <a href={window.innerWidth > 600 ? "/" : undefined}> //onClick={handleLogoClick}>
+    <a href={window.innerWidth > 600 ? "/" : undefined}>
       <div id="logo">
         <img
-          src={initialsThicc}
+          src={assets.initialsThicc}
           alt="Reine Yurkowski's signature"
           style={{ transform: "scaleX(1.5) skew(10deg, 10deg)" }}
         />
