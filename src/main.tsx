@@ -16,6 +16,9 @@ import Welcome from './welcome'
 import Home2 from './home2'
 import MouseShadow from './mouseShadow'
 
+//assets
+import assets from './assets/assetIndex'
+
 
 const router = createBrowserRouter([
   {

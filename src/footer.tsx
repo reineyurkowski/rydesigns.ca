@@ -1,5 +1,7 @@
 import './footer.css'
 
+import assets from './assets/assetIndex';
+
 function Footer() {
   
   return (
@@ -13,7 +15,7 @@ function Footer() {
           >
             <img  
               id="footerReineYurkowskiSignature"
-              src="./src/assets/mediaKits/reineYurkowskiAssets/fullThicc.svg"
+              src={`${assets.fullThicc}`}
               alt='twitter logo'
             />
           </a>

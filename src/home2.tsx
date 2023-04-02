@@ -3,9 +3,12 @@ import './home2.css'
 import { useState, useEffect } from 'react';
 import React from 'react';
 
+//assets
+import assets from './assets/assetIndex'
+
 function Home2() {
   function SectionImage(
-    src:string, alt:string, id:string, side:string,
+    src:any, alt:string, id:string, side:string,
     title:string,
     paragraph:string
   ){
@@ -97,17 +100,17 @@ function Home2() {
           <div id="titleImage">
             <img 
               id='titleImageFlair'
-              src='/src/assets/roundedSquare.svg'
+              src={assets.roundedSquare}
               alt="rounded squares rotating clockwise"
             />
             <img 
               id='titleImageFlair'
-              src='/src/assets/roundedSquare.svg'
+              src={assets.roundedSquare}
               alt="rounded squares rotating clockwise"
             />
             <img 
               id='titleImageFlair'
-              src='/src/assets/roundedSquare.svg'
+              src={assets.roundedSquare}
               alt="rounded squares rotating clockwise"
             />
           </div>
@@ -119,8 +122,8 @@ function Home2() {
 
       <div>
         {SectionImage(
-          './src/assets/images/boogieBoard.jpg',
-          'small child on a boogie board taken by Reine Yurkowski in tofino bc',
+          `${assets.boogieBoard}`,
+          'small child on a boogie board taken by Reine Yurkowski in tofino bc canada',
           'id',
           'left',
           'FOCUS ON WHAT MATTERS',
@@ -132,6 +135,7 @@ function Home2() {
       </div>
       <div>
         {SectionImage(
+          //external image
           'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80',
           'picture of some sushi from unsplash from Derek Duran',
           'id',
@@ -149,7 +153,7 @@ function Home2() {
 
       <div>
         {SectionImage(
-          './src/assets/images/camera.jpg',
+          `${assets.camera}`,
           'a picture of a canon camera pointed at a female surfer in the distance',
           'id',
           'left',
@@ -162,7 +166,7 @@ function Home2() {
       </div>
       <div>
         {SectionImage(
-          './src/assets/images/skull.jpg',
+          `${assets.skull}`,
           'a hand drawn fox skull with various fauna growing out of it by Reine Yurkowski',
           'id',
           'right',
@@ -179,6 +183,7 @@ function Home2() {
 
       <div>
         {SectionImage(
+          //external image
           'https://images.unsplash.com/photo-1643930825365-af2452a0acc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80',
           'handicapped sign on a wood post by Jakub Pabis',
           'id',
@@ -195,6 +200,7 @@ function Home2() {
       </div>
       <div>
         {SectionImage(
+          //external image
           'https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
           'photo of code on a screen by Markus Spiske',
           'id',
@@ -258,7 +264,7 @@ function Home2() {
               borderRadius: '0% 50vh 50vh 0%',
               left: '0px'
             }}
-              src={'./src/assets/images/ry.jpg'}
+              src={assets.ry}
               alt={'picture of reine yurkowski'}
               id={'id'}
               className=''
