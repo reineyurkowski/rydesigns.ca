@@ -73,8 +73,13 @@
         text-decoration: none;
       }
     #footerSocials {
+      aspect-ratio: 1/1;
       filter:invert(1);
       flex:1;
       padding-top: 1.2rem;
       text-align: center;
+    }
+    #footerSocials img {
+      width: 100%;
+      height: auto;
     }
