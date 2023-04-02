@@ -28,7 +28,7 @@ function Footer() {
           >
             <img  
               id="artstationLogo"
-              src="./src/assets/mediaKits/ArtStation Logo/vector/artstationLogo.svg"
+              src={assets.artstationLogo}
               alt='artstation Logo'
             />
           </a>
@@ -38,7 +38,7 @@ function Footer() {
           >
             <img  
               id="linkedInLogo"
-              src="./src/assets/mediaKits/linkedIn-Logos/LinkedIn-Logos/LI-In-Bug.png"
+              src={assets.linkedinLogo}
               alt='linked in logo'
             />
           </a>
@@ -48,7 +48,7 @@ function Footer() {
           >
             <img  
               id="linktreeLogo"
-              src="./src/assets/mediaKits/linktree/med.png"
+              src={assets.linktreeLogo}
               alt='linktree logo'
             />
           </a>
@@ -58,7 +58,7 @@ function Footer() {
           >
             <img  
               id="twitterLogo"
-              src="./src/assets/mediaKits/twitter-logos/Twitter logo/SVG/Logo white.svg"
+              src={assets.twitterLogo}
               alt='twitter logo'
             />
           </a>
