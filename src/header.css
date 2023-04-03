@@ -1,27 +1,63 @@
 @import "./style.css";
+@import "./home2.css";
 
 header {
-  aspect-ratio: auto;
-    min-height: 32px;
-  color: white;
-  display: grid;
-    grid-template-columns: repeat(auto-fit, mixmax(240px, 1fr));
+  background-color: black;
   position: sticky;
+  top: 0;
+  
+  transition-duration: 200ms;
+
+  overflow: hidden;
+
+  z-index: 1000;
+}
+
+header>div {
+  aspect-ratio: auto;
+    min-height: 3rem;
+  color: white;
+  
+
+  display: grid;
+  gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+
+  /* from home2.css */
+  background:
+    radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);
+    background-position: 0vmin, 0vmin;
+    background-size: 5vmin 5vmin;   
+  animation-name: backgroundAnimation;
+    animation-duration: 4s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
 }
 
 .headerItem {
+  /* i was told to add this */
   align-content: center;
-  background-color: beige;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin:1rem;
+  text-align: center;
+  max-height: 66%;
+  padding-top: 0.5rem;
 }
 
-@media only screen and (max-device-width: 768px) {
+#logoHeader {
+  filter: invert(1);
+}
+#logoHeader img {
+  max-height: 2rem;
+}
+
+/* 
+@media only screen and (orientation: landscape)  {
   .headerItem {
     flex-direction: row;
     justify-content: center;
+    width: 100%;
   }
 }
-  
+   */
