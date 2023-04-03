@@ -44,12 +44,18 @@ function Header() {
         <div id='logoHeader' className='headerItem'> 
           <img
             src={assets.initialsThicc}
+            alt='reineYurkowskiSignature'
           />
         </div>
-        <div id='homeHeader' className='headerItem'> home </div>
-        <div id='aboutHeader' className='headerItem'> about </div>
-        <div id='pricingHeader' className='headerItem'> pricing </div>
-        <div id='contactHeader' className='headerItem'> contact </div>
+        <a href='/'>
+          <div id='homeHeader' className='headerItem'> home </div>
+        </a>
+        <a href='/about'>
+          <div id='aboutHeader' className='headerItem'> about </div>
+        </a>   
+        
+        {/* <div id='pricingHeader' className='headerItem'> pricing </div>
+        <div id='contactHeader' className='headerItem'> contact </div> */}
       </div>
     </header>
   )

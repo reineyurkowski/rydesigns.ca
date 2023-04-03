@@ -15,6 +15,7 @@ import Footer from './footer'
 import Welcome from './welcome'
 import Home2 from './home2'
 import MouseShadow from './mouseShadow'
+import About from './about'
 
 //assets
 import assets from './assets/assetIndex'
@@ -34,8 +35,8 @@ const router = createBrowserRouter([
   //   element: <Home />,
   // },
   {
-    path: '/test',
-    element: <div><div>you are on /test</div><Home2 /></div>,
+    path: '/about',
+    element: <About />,
   }
 ])
 
