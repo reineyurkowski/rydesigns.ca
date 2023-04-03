@@ -81,7 +81,7 @@ function About() {
   }
 
   return (
-    <div>
+    <div id="about">
       <h1>ABOUT</h1>
       {SectionImage(
           `${assets.ry}`,
