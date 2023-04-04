@@ -89,7 +89,7 @@ function Home2() {
             Good Designs Can:
           </h1>
           <h2 className='title' id='swapSection'>
-            <span id='swapText'>Set Things In Motion</span>
+            <span id='swapText'>help you stand out</span>
           </h2>
         </div>
           
