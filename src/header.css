@@ -42,7 +42,9 @@ header>div {
   justify-content: center;
   text-align: center;
   max-height: 66%;
-  padding-top: 0.5rem;
+}
+.headerItemWithText {
+  margin-top: 1rem;
 }
 
 #logoHeader {
@@ -50,6 +52,7 @@ header>div {
 }
 #logoHeader img {
   max-height: 2rem;
+  padding-top: 1rem;
 }
 
 /* 

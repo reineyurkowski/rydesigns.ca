@@ -48,10 +48,10 @@ function Header() {
           />
         </div>
         <a href='/'>
-          <div id='homeHeader' className='headerItem'> home </div>
+          <div id='homeHeader' className='headerItem headerItemWithText'> home </div>
         </a>
         <a href='/about'>
-          <div id='aboutHeader' className='headerItem'> about </div>
+          <div id='aboutHeader' className='headerItem headerItemWithText'> about </div>
         </a>   
         
         {/* <div id='pricingHeader' className='headerItem'> pricing </div>
