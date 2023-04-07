@@ -132,6 +132,7 @@ function Home2() {
             <img 
               id='encouragementToScroll'
               src={assets.ryAnimationGif}
+              alt="ry logo there the y's tale extends into a down arrow encouraging the user to scroll."
               style={{zIndex: 1000}}
             />
           </div>

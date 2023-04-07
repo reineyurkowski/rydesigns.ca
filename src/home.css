@@ -144,7 +144,7 @@ h3 {
   @media (max-width: 600px) {
     #titleContainer>img {
       display: auto;
-      max-width: 60vw;
+      max-width: 50vw;
       position: relative;
         left:auto;
         top: auto;
