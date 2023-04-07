@@ -42,16 +42,21 @@ function Header() {
     >
       <div>
         <div id='logoHeader' className='headerItem'> 
-          <img
-            src={assets.initialsThicc}
-            alt='reineYurkowskiSignature'
-          />
+          <a href='/home'>
+            <img
+              src={assets.initialsThicc}
+              alt='reineYurkowskiSignature'
+            />
+          </a>
         </div>
         <a href='/'>
           <div id='homeHeader' className='headerItem headerItemWithText'> home </div>
         </a>
         <a href='/about'>
           <div id='aboutHeader' className='headerItem headerItemWithText'> about </div>
+        </a>   
+        <a href='/pricing'>
+          <div id='pricingHeader' className='headerItem headerItemWithText'> pricing </div>
         </a>   
         
         {/* <div id='pricingHeader' className='headerItem'> pricing </div>

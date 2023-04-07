@@ -16,6 +16,7 @@ import Welcome from './welcome'
 import Home2 from './home2'
 import MouseShadow from './mouseShadow'
 import About from './about'
+import Pricing from './pricing'
 
 //assets
 import assets from './assets/assetIndex'
@@ -30,14 +31,14 @@ const router = createBrowserRouter([
     path: '/home',
     element: <Home2 />,
   },
-  // {
-  //   path: '/home',
-  //   element: <Home />,
-  // },
   {
     path: '/about',
     element: <About />,
-  }
+  },
+  {
+    path: '/pricing',
+    element: <Pricing />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

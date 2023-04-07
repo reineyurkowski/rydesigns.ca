@@ -2,6 +2,7 @@
   --color1: #00ffd5;
   --color2: #000000;
   --color3: #ffFFff;
+  --color4: #383838;
 
   --backgroundColor1: var(--color2);
   --backgroundColor2: var(--color3);
@@ -108,4 +109,32 @@ body {
     z-index: 100;
     overflow: visible;
     /* filter: invert(1); */
+}
+
+.tableContainer {
+  overflow: scroll;
+}
+table {
+  /* border: 2px solid var(--color1); */
+  padding: 3rem;
+  max-width: 90vw;
+  margin: auto;
+}
+table>* {
+  color:var(--color3);
+}
+thead>tr>th {
+  color: var(--color1);
+  padding: 1rem;
+}
+tr {
+  background-color: var(--color2);
+  /* filter: brightness(0.2); */
+}
+tr:nth-child(2n) {
+  background-color: var(--color4);
+}
+td {
+  border: 2px solid var(--color4);
+  padding: 0.7rem;
 }
