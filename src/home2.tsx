@@ -156,6 +156,7 @@ function Home2() {
               id='titleImageFlair'
               src={assets.roundedSquare}
               alt="rounded squares rotating clockwise"
+              style={{overflow:'hidden'}}
             />
           </div>
         </div>

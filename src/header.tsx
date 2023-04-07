@@ -16,22 +16,22 @@ function Header() {
   const [scrollPos, setScrollPos] = useState(0);
   const [scrollDirection, setScrollDirection] = useState('none');
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      if (currentScrollPos > scrollPos) {
-        setScrollDirection('down');
-        setHeaderHeight('0.3rem');
-      } else {
-        setScrollDirection('up');
-        setHeaderHeight('auto');
-      }
-      setScrollPos(currentScrollPos);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollPos = window.pageYOffset;
+  //     if (currentScrollPos > scrollPos) {
+  //       setScrollDirection('down');
+  //       setHeaderHeight('0.3rem');
+  //     } else {
+  //       setScrollDirection('up');
+  //       setHeaderHeight('auto');
+  //     }
+  //     setScrollPos(currentScrollPos);
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [scrollPos]);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, [scrollPos]);
 
   // Render your header component with scrollDirection as a prop
   return (
