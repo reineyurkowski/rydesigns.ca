@@ -1,6 +1,6 @@
 import './home.css'
 import './home2.css'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import React from 'react';
 
 //assets
@@ -79,18 +79,62 @@ function Home2() {
       </div>
     );  
   }
+
+  // function GifToImage() {
+  //   const canvasRef = useRef(assets.ryAnimationGif);
+  //   const imgRef = useRef(assets.ryLead);
+  
+  //   useEffect(() => {
+  //     const c = canvasRef.current;
+  //     const w = c.width;
+  //     const h = c.height;
+  //     const img = imgRef.current;
+  
+  //     setTimeout(() => {
+  //       c.getContext('2d').drawImage(img, 0, 0, w, h);
+  //       img.style.display = 'none';
+  //       c.style.display = 'block';
+  //     }, 10000);
+  //   }, []);
+  
+  //   return (
+  //     <>
+  //       <img
+  //         ref={imgRef}
+  //         src="your-image-url.jpg"
+  //         alt="your-image"
+  //         style={{ display: 'block' }}
+  //       />
+  //       <canvas
+  //         ref={canvasRef}
+  //         width="512"
+  //         height="512"
+  //         style={{ display: 'none' }}
+  //       />
+  //     </>
+  //   );
+  // }
   
   // end of functions
   return (
     <div id="home2Container">
-      <div>
+      <div id='titleWholeContainer'>
         <div>
-          <h1 className='title'>
-            Good Designs Can:
-          </h1>
-          <h2 className='title' id='swapSection'>
-            <span id='swapText'>help you stand out</span>
-          </h2>
+          <div id='titleContainer'>
+            <h1 className='title'>
+              Good Designs Can:
+            </h1>
+            <h2 className='title' id='swapSection'>
+              <span id='swapText'>
+                help you stand out 
+              </span>
+            </h2>
+            <img 
+              id='encouragementToScroll'
+              src={assets.ryAnimationGif}
+              style={{zIndex: 1000}}
+            />
+          </div>
         </div>
           
         {/* <h1 id='titleShadow'>
@@ -124,7 +168,7 @@ function Home2() {
       <br/>
       <br/>
 
-      <div>
+      <div className='container'>
         {SectionImage(
           `${assets.boogieBoard}`,
           'small child on a boogie board taken by Reine Yurkowski in tofino bc canada',
@@ -137,7 +181,7 @@ function Home2() {
           My story is one of dedication, hard work, and a deep love for what I do. I believe that every project I take on is an opportunity to showcase my skills and bring something truly unique to the table.`
         )}
       </div>
-      <div>
+      <div className='container'>
         {SectionImage(
           //external image
           'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80',
@@ -155,7 +199,7 @@ function Home2() {
         )}
       </div>
 
-      <div>
+      <div className='container'>
         {SectionImage(
           `${assets.camera}`,
           'a picture of a canon camera pointed at a female surfer in the distance',
@@ -168,7 +212,7 @@ function Home2() {
           Whether you're looking for stunning headshots, beautiful family portraits, or eye-catching product photography, I can help you create the perfect image that truly captures who you are.`
         )}
       </div>
-      <div>
+      <div className='container'>
         {SectionImage(
           `${assets.skull}`,
           'a hand drawn fox skull with various fauna growing out of it by Reine Yurkowski',
@@ -185,7 +229,7 @@ function Home2() {
         )}
       </div>
 
-      <div>
+      <div className='container'>
         {SectionImage(
           //external image
           'https://images.unsplash.com/photo-1643930825365-af2452a0acc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80',
@@ -202,7 +246,7 @@ function Home2() {
           This means ensuring that the website is easy to navigate, the content is readable, and the design is inclusive of all users, including those with visual, auditory, or motor impairments.`
         )}
       </div>
-      <div>
+      <div className='container'>
         {SectionImage(
           //external image
           'https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
@@ -217,7 +261,7 @@ function Home2() {
         )}
       </div>
 
-      <div>
+      <div className='container'>
         <div id='imageSectionContainer' style={
           'left' == 'left' 
           ? {

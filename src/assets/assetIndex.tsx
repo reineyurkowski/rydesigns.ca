@@ -10,6 +10,9 @@ import linkedinLogo from './mediaKits/LinkedIn-Logos/LinkedIn-Logos/LI-In-Bug2.p
 import linktreeLogo from './mediaKits/linktree/med.png';
 import roundedSquare from './roundedSquare.svg';
 import ry from './images/ry.jpg';
+import ryAnimation from './mediaKits/reineYurkowskiAssets/initialsLead.mp4'
+import ryAnimationGif from './mediaKits/reineYurkowskiAssets/initialsLead.gif'
+import ryLead from './mediaKits/reineYurkowskiAssets/initialsLead.png'
 import skull from './images/skull.jpg';
 import twitterLogo from './mediaKits/twitter-logos/Twitter logo/SVG/Logo white.svg';
 
@@ -25,6 +28,9 @@ const assets = {
   linktreeLogo,
   roundedSquare,
   ry,
+  ryAnimation,
+  ryAnimationGif,
+  ryLead,
   skull,
   twitterLogo,
 };

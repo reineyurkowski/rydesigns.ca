@@ -1,5 +1,9 @@
 @import "./style.css";
 
+.container {
+  padding-bottom: 3rem;
+}
+
 #home2Container {
   background:
     radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);
@@ -104,3 +108,4 @@
 #imageSectionContainer>div>p {
   color: white;
 }
+
