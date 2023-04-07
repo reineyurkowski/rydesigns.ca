@@ -293,9 +293,10 @@ function Home2() {
               }
             }`}
           </style>
-          <div>
+          <div className='interested'>
             <h3 id={''} className=''>INTERESTED? LET'S CHAT</h3>
             <h4>phone:</h4>
+            <br/>
             <p>
               <a href='tel:+1-(250)-216-2556'>
                 +1·(250)·216·2556
@@ -305,6 +306,7 @@ function Home2() {
               <br/>
               <br/>
               <h4>email:</h4>
+              <br/>
               <a href='mailto:reineyurkowski@gmail.com'>
                 reineyurkowski@gmail.com
               </a>
@@ -321,6 +323,15 @@ function Home2() {
             />
           </div>
         </div>
+      </div>
+
+      <div className='ctaSection'>
+          <h3>Want To Learn More About Me?</h3>
+          <a href='about'>
+            <div id='textButton'> 
+              About Me
+            </div>
+          </a>
       </div>
     </div>
   )

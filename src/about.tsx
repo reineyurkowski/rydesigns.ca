@@ -84,8 +84,8 @@ function About() {
     <div id="about">
       <h1>ABOUT</h1>
       {SectionImage(
-          `${assets.ry}`,
-          'a hand drawn fox skull with various fauna growing out of it by Reine Yurkowski',
+          `${assets.rySkiJump}`,
+          'a photo of reine yurkowski at mt.washington in bc doing a large jump doing a grab called the "illegal grab". photo taken by andrew minder around 2017',
           'id',
           'right',
           `MY STORY`,
@@ -104,8 +104,8 @@ function About() {
           My passion for this field has never wavered. I am excited to continue exploring new ideas and pushing the boundaries of what's possible with visual art.`
         )}
         {SectionImage(
-          `${assets.skull}`,
-          'a hand drawn fox skull with various fauna growing out of it by Reine Yurkowski',
+          `${assets.abstractFox}`,
+          'an illustration of an abstract fox created by Reine Yurkowski',
           'id',
           'left',
           `MY PASSIONS`,
@@ -121,8 +121,8 @@ function About() {
           Whether I am working on a website, photographing a breathtaking landscape, or creating a stunning piece of art, I approach every project with the same level of passion and dedication to my craft.`
         )}
         {SectionImage(
-          `https://images.unsplash.com/photo-1643930825365-af2452a0acc5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80`,
-          'a hand drawn fox skull with various fauna growing out of it by Reine Yurkowski',
+          `https://images.unsplash.com/photo-1523998956902-6d4f549de43d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80`,
+          'a pink and white handicapped sigh pointing to a "step free" route.',
           'id',
           'right',
           `MY PHILOSOPHY`,
@@ -145,13 +145,15 @@ function About() {
             justifyContent: 'space-between', 
             display: 'flex', 
             flexDirection: 'row-reverse',
-            paddingRight: '2rem'
+            paddingRight: '2rem',
+            textAlign: 'left',
           } 
           : {
             justifyContent: 'space-between', 
             display: 'flex', 
             flexDirection: 'row',
-            paddingLeft: '2rem'
+            paddingLeft: '2rem',
+            textAlign: 'left',
           }
           
         }>
@@ -184,6 +186,7 @@ function About() {
                 reineyurkowski@gmail.com
               </a>
           </div>
+          {/* the Image of this container */}
           <div>
             <img style={{
               borderRadius: '0% 50vh 50vh 0%',
