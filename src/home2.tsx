@@ -80,40 +80,33 @@ function Home2() {
     );  
   }
 
-  // function GifToImage() {
-  //   const canvasRef = useRef(assets.ryAnimationGif);
-  //   const imgRef = useRef(assets.ryLead);
+  // function TypingEffect() {
+  //   console.log('typing effect called')
+  //   const [string, setString] = useState('hello');
   
-  //   useEffect(() => {
-  //     const c = canvasRef.current;
-  //     const w = c.width;
-  //     const h = c.height;
-  //     const img = imgRef.current;
-  
-  //     setTimeout(() => {
-  //       c.getContext('2d').drawImage(img, 0, 0, w, h);
-  //       img.style.display = 'none';
-  //       c.style.display = 'block';
-  //     }, 10000);
-  //   }, []);
-  
+  //   let typingState = "removing";
+  //   function TextEffect() {
+  //     if (typingState == 'removing') {
+  //       function removeLastLetter() {
+  //         setString(string.slice(0, -1));
+  //       }
+  //     }
+
+  //     if (typingState == 'adding') {
+  //       function addLastLetter() {
+  //         setString(string + 'h');
+  //       }
+  //     }
+      
+  //     return(
+  //       <div>test</div>
+  //     )
+  //   }
   //   return (
-  //     <>
-  //       <img
-  //         ref={imgRef}
-  //         src="your-image-url.jpg"
-  //         alt="your-image"
-  //         style={{ display: 'block' }}
-  //       />
-  //       <canvas
-  //         ref={canvasRef}
-  //         width="512"
-  //         height="512"
-  //         style={{ display: 'none' }}
-  //       />
-  //     </>
-  //   );
+  //     <div>{window.onload = () => setInterval(TextEffect, 300)}</div>
+  //   )
   // }
+  
   
   // end of functions
   return (
@@ -126,7 +119,7 @@ function Home2() {
             </h1>
             <h2 className='title' id='swapSection'>
               <span id='swapText'>
-                help you stand out 
+                this is text text
               </span>
             </h2>
             <img 
@@ -169,6 +162,10 @@ function Home2() {
       <br/>
       <br/>
       <br/>
+
+      {/* <div id='testDiv'>
+        <TypingEffect />
+      </div> */}
 
       <div className='container'>
         {SectionImage(

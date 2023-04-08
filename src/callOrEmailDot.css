@@ -1,0 +1,13 @@
+@import './style.css';
+
+#callOrEmailDot {
+  aspect-ratio: 1/1;
+    height: 3.2rem;
+    width: 3.2rem;
+  background-color: var(--color1);
+  border-radius: 100%;
+  text-align: center;
+  position: sticky;
+    bottom: 1rem;
+    left: 1rem;
+}

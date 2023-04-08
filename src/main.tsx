@@ -9,14 +9,15 @@ import {
 import "./style.css"
 
 //components
+import About from './about'
+import CallOrEmailDot from './callOrEmailDot'
+import Footer from './footer'
 import Header from './header'
 import Home from './home'
-import Footer from './footer'
-import Welcome from './welcome'
 import Home2 from './home2'
 import MouseShadow from './mouseShadow'
-import About from './about'
 import Pricing from './pricing'
+import Welcome from './welcome'
 
 //assets
 import assets from './assets/assetIndex'
@@ -46,6 +47,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Header />
       <RouterProvider router={router} />
     <Footer />
+    <CallOrEmailDot />
     {/* <MouseShadow /> */}
   </React.StrictMode>,
 )
