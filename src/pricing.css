@@ -1,0 +1,20 @@
+@import './home2.css';
+
+#pricing {
+  background:
+    radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);
+    background-position: 0vmin, 0vmin;
+    background-size: 5vmin 5vmin;   
+  animation-name: backgroundAnimation;
+    animation-duration: 4s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+  overflow: hidden;
+  display: block;
+  padding: 3rem;
+}
+@media (max-width: 600px) {
+  #pricing {
+    background-size: 15vmin 15vmin;   
+  }
+}

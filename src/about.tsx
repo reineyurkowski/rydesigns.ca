@@ -122,7 +122,7 @@ function About() {
         )}
         {SectionImage(
           `https://images.unsplash.com/photo-1523998956902-6d4f549de43d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2048&q=80`,
-          'a pink and white handicapped sigh pointing to a "step free" route.',
+          'a pink and white handicapped sigh pointing to a "step free" route. by: https://unsplash.com/@yomex4life',
           'id',
           'right',
           `MY PHILOSOPHY`,

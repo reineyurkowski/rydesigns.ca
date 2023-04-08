@@ -13,9 +13,9 @@
   display: block;
 }
 @media (max-width: 600px) {
-#about {
-  background-size: 15vmin 15vmin;   
-}
+  #about {
+    background-size: 15vmin 15vmin;   
+  }
 }
 
 h1 {

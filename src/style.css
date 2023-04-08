@@ -28,7 +28,7 @@
 body {
   background-color: var(--backgroundColor1);
   color: var(--textColor3);
-  font-family: sans-serif;
+  font-family: 'Furuta', sans-serif;
 }
 
 .ctaSection {
@@ -127,6 +127,10 @@ thead>tr>th {
   color: var(--color1);
   padding: 1rem;
 }
+.tableSeparator {
+  color:var(--color1);
+}
+
 tr {
   background-color: var(--color2);
   /* filter: brightness(0.2); */

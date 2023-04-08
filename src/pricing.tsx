@@ -4,6 +4,7 @@ import assets from "./assets/assetIndex";
 
 import './style.css'
 import './about.css'
+import './pricing.css'
 
 function Pricing() {
 
@@ -25,6 +26,9 @@ function Pricing() {
               <br/>
               Depending on other details more discounts may be 
               applied.
+              <br/>
+              so please treat this page as if you were to hire us 
+              to be doing one of these tasks at any one time.
             </p> 
 
       <div className="tableContainer">
@@ -38,7 +42,7 @@ function Pricing() {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr className="tableSeparator">
               <td>
                 <b>WEBPAGES</b>
               </td>
@@ -67,7 +71,20 @@ function Pricing() {
               <td>$250</td>
               <td>HTML+CSS+JS/React</td>
             </tr>
+            </tbody>
+        </table>
+
+        <table>
+          {/* <thead>
             <tr>
+              <th>Product Name</th>
+              <th>Description</th>
+              <th>Starting Price (in CAD)</th>
+              <th>Technologies / Equipment </th>
+            </tr>
+          </thead> */}
+          <tbody>
+            <tr className="tableSeparator">
               <td>
                 <b>WEB-BASED APPLICATIONS</b>
               </td>
@@ -78,7 +95,20 @@ function Pricing() {
               <td>hard to estimate without more details, contact for more.</td>
               <td>HTML+CSS+JS/React</td>
             </tr>
+            </tbody>
+        </table>
+        
+        <table>
+          {/* <thead>
             <tr>
+              <th>Product Name</th>
+              <th>Description</th>
+              <th>Starting Price (in CAD)</th>
+              <th>Technologies / Equipment </th>
+            </tr>
+          </thead> */}
+          <tbody>
+            <tr className="tableSeparator">
               <td>
                 <b>3D ELEMENTS</b>
               </td>
@@ -87,15 +117,28 @@ function Pricing() {
               <td>3D Interactive Experiences with No/Some Existing Assets:</td>
               <td>A 3D experience or application with no existing assets yet</td>
               <td>+$400 to webpage price</td>
-              <td>WebGL</td>
+              <td>html+css+js/react+WebGL</td>
             </tr>
             <tr>
               <td>3D Interactive Experiences with Most/All Existing Assets:</td>
               <td>A 3D experience or application with at least 80% of the assets</td>
               <td>+$200 to webpage price</td>
-              <td>WebGL</td>
+              <td>html+css+js/react+WebGL</td>
             </tr>
+            </tbody>
+        </table>
+        
+        <table>
+          {/* <thead>
             <tr>
+              <th>Product Name</th>
+              <th>Description</th>
+              <th>Starting Price (in CAD)</th>
+              <th>Technologies / Equipment </th>
+            </tr>
+          </thead> */}
+          <tbody>
+            <tr className="tableSeparator">
               <td>
                 <b>PHOTOGRAPHY AND IMAGE EDITING</b>
               </td>
@@ -115,7 +158,20 @@ function Pricing() {
               <td>$30/edit</td>
               <td>various software</td>
             </tr>
+            </tbody>
+        </table>
+        
+        <table>
+          {/* <thead>
             <tr>
+              <th>Product Name</th>
+              <th>Description</th>
+              <th>Starting Price (in CAD)</th>
+              <th>Technologies / Equipment </th>
+            </tr>
+          </thead> */}
+          <tbody>
+            <tr className="tableSeparator">
               <td>
                 <b>DESIGN WORK</b>
               </td>
@@ -138,7 +194,20 @@ function Pricing() {
               <td>$80</td>
               <td>various software</td>
             </tr>
+            </tbody>
+        </table>
+        
+        <table>
+          {/* <thead>
             <tr>
+              <th>Product Name</th>
+              <th>Description</th>
+              <th>Starting Price (in CAD)</th>
+              <th>Technologies / Equipment </th>
+            </tr>
+          </thead> */}
+          <tbody>
+            <tr className="tableSeparator">
               <td>
                 <b>OTHER OFFERINGS</b>
               </td>
@@ -179,16 +248,6 @@ function Pricing() {
               <td>$40/hr</td>
               <td>various hardware and software</td>
             </tr>
-
-            <h3>REMINDER:</h3>
-            <p> 
-              depending on what you wish to do, 
-              you may be eligible for a discount. 
-              <br/>
-              ie, "Remote Audio Recording" + "Videography"
-              is eligible for a discount. down to $60/hr
-              instead of $40/hr + $40/hr depending on conditions.
-            </p> 
             {/* 
             CATEGORY
             <tr>
@@ -208,6 +267,40 @@ function Pricing() {
             */}
           </tbody>
         </table>
+        <div>
+          <h3>REMINDER:</h3>
+          <p> 
+            Depending on what you wish to do, 
+            you may be eligible for a discount. 
+            <br/>
+            IE, "Remote Audio Recording" + "Videography"
+            is eligible for a discount. down to $60/hr
+            instead of $40/hr + $40/hr depending on conditions.
+          </p> 
+        </div>
+        <div>
+          <h3>JUSTIFYING THE COST:</h3>
+          <p> 
+            Some of you might consider the cost to be expensive
+            for what some of it is, and that's totally understandable!
+            <br/>
+            The reason we charge such is for the following reasons:
+          </p> 
+            <ul>
+              <li> Quality <br/>
+                With us, you're getting several niceties and insurances.
+                <br/>
+                You're getting access to your files upto 3 months after the project with cloud storage,
+                products that are accessible to most users, and 
+              </li>
+              <li> Everything Needed Is Covered* <br/>
+
+              </li>
+              <li> Redundancy <br/>
+
+              </li>
+            </ul>
+        </div>
       </div>
     </div>
   )
