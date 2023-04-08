@@ -6,6 +6,11 @@
       "src": "./src/assets/mediaKits/reineYurkowskiAssets/apple-touch-icon.png",
       "sizes": "192x192",
       "type": "image/png"
+    },
+    {
+      "src": "./src/assets/mediaKits/reineYurkowskiAssets/initialsThiccIconDark.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": "/index.html",
