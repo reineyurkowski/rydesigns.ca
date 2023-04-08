@@ -28,7 +28,7 @@
 body {
   background-color: var(--backgroundColor1);
   color: var(--textColor3);
-  font-family: 'Furuta', sans-serif;
+  font-family: sans-serif;
 }
 
 .ctaSection {

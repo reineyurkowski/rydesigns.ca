@@ -36,6 +36,21 @@
     <link rel="apple-touch-icon" href='./src/assets/mediaKits/reineYurkowskiAssets/apple-touch-icon.png'>
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#00ffd5">
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // Registration failed
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      } else {
+        console.log('Service workers are not supported.');
+      }
+    </script>  
     <!-- OTHER -->
     <title>ryDesigns</title>
     <link rel="icon" type="image/svg+xml" href="./src/assets/mediaKits/reineYurkowskiAssets/initialsThicc.svg" />
