@@ -9,6 +9,7 @@ import initialsThicc from "./mediaKits/reineYurkowskiAssets/initialsThicc.svg";
 import instagramLogo from './mediaKits/Instagram Logo Pack/02 White Glyph/Instagram_Glyph_White.svg';
 import linkedinLogo from './mediaKits/LinkedIn-Logos/LinkedIn-Logos/LI-In-Bug2.png';
 import linktreeLogo from './mediaKits/linktree/med.png';
+import mailIcon from './mediaKits/commonIcons/mailIcon.svg'
 import roundedSquare from './roundedSquare.svg';
 import ry from './images/ry.jpg';
 import ryAnimation from './mediaKits/reineYurkowskiAssets/initialsLead.mp4';
@@ -29,6 +30,7 @@ const assets = {
   instagramLogo,
   linkedinLogo,
   linktreeLogo,
+  mailIcon,
   roundedSquare,
   ry,
   ryAnimation,
