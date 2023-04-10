@@ -8,6 +8,10 @@
   padding-bottom: 3rem;
 }
 
+#encouragementToScroll {
+  border-radius: 100%;
+}
+
 #home2Container {
   background:
     radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);

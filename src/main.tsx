@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 import {
   createBrowserRouter,
+  Router,
   RouterProvider,
 } from 'react-router-dom'
 
@@ -13,6 +14,7 @@ import About from './about'
 import CallOrEmailDot from './callOrEmailDot'
 import Contact from './contact'
 import Footer from './footer'
+import Four04 from './404'
 import Header from './header'
 import Home from './home'
 import Home2 from './home2'
@@ -44,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact />,
+  },
+  {
+    path: '*',
+    element: <Four04 />,
   },
 ])
 

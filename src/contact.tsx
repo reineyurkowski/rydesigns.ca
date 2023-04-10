@@ -12,16 +12,22 @@ function Contact() {
       <div>
         <h2>Direct Contact</h2>
         <p>for any inquiries, please use these:</p> 
+        <br/>
+        <br/>
         <ul>
           <li>
             email: 
+            <br/>
             <br/>
             <a href='mailto:reineyurkowski@gmail.com'>
               reineyurkowski@gmail.com
             </a>
           </li>
+          <br/>
+          <br/>
           <li>
             phone: 
+            <br/>
             <br/>
             <a href='tel:+1-(250)-216-2556'>
               +1-(250)-216-2556
@@ -32,46 +38,30 @@ function Contact() {
       <div>
         <h2>Official Socials</h2>
         <p>stay in touch!</p>
-        {/* <ul>
-          <li>
-            <a href='https://www.facebook.com/ryDesignsBC' target="_blank">
-              facebook
-            </a>
-          </li>
-          <li>
-            <a href='https://www.instagram.com/reineyurkowski/' target="_blank">
-              instagram
-            </a>
-          </li>
-          <li>
-            <a href='https://twitter.com/reineyurkowski' target="_blank">
-              twitter
-            </a>
-          </li>
-          <li>
-            <a href='https://www.linkedin.com/in/reine-y-326025a9/' target="_blank">
-              linkedIn
-            </a>
-          </li>
-        </ul> */}
         <div className="socialsContainer">
-          <a href='https://www.linkedin.com/in/reine-y-326025a9/' target="_blank">
+          <a href='https://www.facebook.com/ryDesignsBC' target="_blank">
               <img 
+                src={assets.facebookLogo}
+              />
+              Facebook
+          </a>
+          <a href='https://www.linkedin.com/in/reine-y-326025a9/' target="_blank">
+              <img style={{filter: 'grayscale(1) brightness(3)'}}
                 src={assets.linkedinLogo}
               />
               linkedIn
           </a>
-          <a href='https://www.linkedin.com/in/reine-y-326025a9/' target="_blank">
-              <img 
-                src={assets.linkedinLogo}
+          <a href='https://www.instagram.com/reineyurkowski/' target="_blank">
+              <img style={{filter: 'grayscale(1) brightness(3)'}}
+                src={assets.instagramLogo}
               />
-              linkedIn
+              instagram
           </a>
-          <a href='https://www.linkedin.com/in/reine-y-326025a9/' target="_blank">
+          <a href='https://twitter.com/reineyurkowski' target="_blank">
               <img 
-                src={assets.linkedinLogo}
+                src={assets.twitterLogo}
               />
-              linkedIn
+              twitter
           </a>
         </div>
       </div>
