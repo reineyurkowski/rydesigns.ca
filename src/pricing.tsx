@@ -287,18 +287,23 @@ function Pricing() {
             The reason we charge such is for the following reasons:
           </p> 
             <ul>
-              <li> Quality <br/>
-                With us, you're getting several niceties and insurances.
+            <li> Quality <br/>
+                At our company, we prioritize quality and offer several benefits and assurances to ensure a top-notch experience. 
+                With our personal storage and cloud storage system allows you access to your files for up to three months after the project is complete. 
+                We also ensure that our products are accessible to the majority of users, making sure those who need screen readers, have issues with screen
+                readers, or other such disabilities have a chance to access your site.
+            </li>
+            <li> Everything Needed Is Covered* <br/>
+                We have a comprehensive approach to our projects and cover everything needed to ensure your satisfaction. 
+                From initial concept to final product, we ensure that all bases are covered.
                 <br/>
-                You're getting access to your files upto 3 months after the project with cloud storage,
-                products that are accessible to most users, and 
-              </li>
-              <li> Everything Needed Is Covered* <br/>
-
-              </li>
-              <li> Redundancy <br/>
-
-              </li>
+                NOTICE: please note, this does not include any hosting fees or anything of that manner. but is in relation to the product itself.
+            </li>
+            <li> Redundancy <br/>
+                We understand the importance of redundancy in systems and processes. 
+                That's why we take measures to ensure that our projects and products are backed up and redundant to minimize the risk of failure,
+                and build our projects in a way that allow for easy scalability.
+            </li>
             </ul>
         </div>
       </div>

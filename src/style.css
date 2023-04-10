@@ -117,28 +117,28 @@ body {
 table {
   /* border: 2px solid var(--color1); */
   padding: 3rem;
-  max-width: 90vw;
+  width: 80vw;
   margin: auto;
 }
 table>* {
   color:var(--color3);
 }
-thead>tr>th {
-  color: var(--color1);
-  padding: 1rem;
-}
-.tableSeparator {
-  color:var(--color1);
-}
+  thead>tr>th {
+    color: var(--color1);
+    padding: 1rem;
+  }
+  .tableSeparator {
+    color:var(--color1);
+  }
 
-tr {
-  background-color: var(--color2);
-  /* filter: brightness(0.2); */
-}
-tr:nth-child(2n) {
-  background-color: var(--color4);
-}
-td {
-  border: 2px solid var(--color4);
-  padding: 0.7rem;
-}
+  tr {
+    background-color: var(--color2);
+    /* filter: brightness(0.2); */
+  }
+  tr:nth-child(2n) {
+    background-color: var(--color4);
+  }
+  td {
+    border: 2px solid var(--color4);
+    padding: 0.7rem;
+  }
