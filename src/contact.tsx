@@ -66,7 +66,7 @@ function Contact() {
         </div>
       </div>
       <div>
-        <h2>Official Socials (not updated)</h2>
+        <h2>Official Socials (not monitored)</h2>
         <p>these will be rarely updated if ever, but you know these are at least the real deal!</p>
         <ul>
           <li>
