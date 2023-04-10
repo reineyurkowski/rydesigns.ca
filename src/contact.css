@@ -1,0 +1,41 @@
+@import './style.css';
+@import './home2.css';
+
+#contact {
+  background:
+    radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);
+    background-position: 0vmin, 0vmin;
+    background-size: 5vmin 5vmin;   
+  animation-name: backgroundAnimation;
+    animation-duration: 4s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+  overflow: hidden;
+  display: block;
+  padding: 3rem;
+}
+@media (max-width: 600px) {
+  #contact {
+    background-size: 15vmin 15vmin;   
+  }
+}
+
+.socialsContainer {
+  aspect-ratio: auto;
+    width: 100%;
+  display: grid;
+    grid-template-columns: repeat(autofit, minmax(240px, 1fr));
+}
+
+.socialsContainer>a {
+  aspect-ratio: 1/2;
+  max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socialsContainer>a>img {
+  max-width: 25%;
+}
+

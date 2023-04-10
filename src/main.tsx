@@ -11,6 +11,7 @@ import "./style.css"
 //components
 import About from './about'
 import CallOrEmailDot from './callOrEmailDot'
+import Contact from './contact'
 import Footer from './footer'
 import Header from './header'
 import Home from './home'
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: '/pricing',
     element: <Pricing />,
+  },
+  {
+    path: '/contact',
+    element: <Contact />,
   },
 ])
 

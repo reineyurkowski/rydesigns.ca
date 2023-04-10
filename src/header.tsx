@@ -58,9 +58,9 @@ function Header() {
         <a href='/pricing'>
           <div id='pricingHeader' className='headerItem headerItemWithText'> pricing </div>
         </a>   
-        
-        {/* <div id='pricingHeader' className='headerItem'> pricing </div>
-        <div id='contactHeader' className='headerItem'> contact </div> */}
+        <a href='/contact'>
+          <div id='contactHeader' className='headerItem headerItemWithText'> contact </div>
+        </a>   
       </div>
     </header>
   )
