@@ -10,6 +10,7 @@
 
 #encouragementToScroll {
   border-radius: 100%;
+  transform: translateY(-5rem);
 }
 
 #home2Container {
