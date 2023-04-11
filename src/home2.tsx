@@ -119,7 +119,7 @@ function Home2() {
             </h1>
             <h2 className='title' id='swapSection'>
               <span id='swapText'>
-                Set Things In Motion
+                Set Things In Motion ➡️
               </span>
             </h2>
             <img 

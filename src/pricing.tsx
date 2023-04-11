@@ -160,6 +160,38 @@ function Pricing() {
             </tr>
             </tbody>
         </table>
+
+        <table>
+          {/* <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Description</th>
+              <th>Starting Price (in CAD)</th>
+              <th>Technologies / Equipment </th>
+            </tr>
+          </thead> */}
+          <tbody>
+            <tr className="tableSeparator">
+              <td>
+                <b>HARDWARE CONSOLATION AND SETUP</b>
+              </td>
+            </tr>
+            <tr>
+              <td>Offline Local Recoverable Storage</td>
+              <td>
+                
+              </td>
+              <td> 40$/hr</td>
+              <td>Camera and photography light</td>
+            </tr>
+            <tr>
+              <td>Photo Edits</td>
+              <td>Large edits to photos such as photo bashing and other work.</td>
+              <td>$30/edit</td>
+              <td>various software</td>
+            </tr>
+            </tbody>
+        </table>
         
         <table>
           {/* <thead>
