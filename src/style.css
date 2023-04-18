@@ -20,7 +20,8 @@
 
 @font-face {
   font-family: test09;
-  src: url('./src/assets/test09v1r31.otf');
+  src: local('type09'), 
+  url(@/assets/styles/fonts/OpenSans-Bold.ttf) format('openTypeFormat');
 }
 
 * {
@@ -33,7 +34,7 @@
 body {
   background-color: var(--backgroundColor1);
   color: var(--textColor3);
-  font-family: 'test09';
+  font-family: 'test09', sans-serif;
   letter-spacing: 1px;
 }
 
