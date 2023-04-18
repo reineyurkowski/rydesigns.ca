@@ -156,13 +156,6 @@ function Home2() {
         </div>
       </div>
 
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-
       {/* <div id='testDiv'>
         <TypingEffect />
       </div> */}
