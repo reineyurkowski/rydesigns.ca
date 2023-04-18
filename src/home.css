@@ -135,19 +135,19 @@ h3 {
 }
   #titleContainer>img {
     display: flex;
-    max-width: 40vw;
+    max-width: 30vw;
     position: relative;
-      left:30rem;
-      top: -40vh;
+      left:35rem;
+      bottom: 25rem;
     filter: contrast(10);
   }
   @media (max-width: 600px) {
     #titleContainer>img {
       display: auto;
-      max-width: 50vw;
+      max-width: 30vw;
       position: relative;
         left:auto;
-        top: auto;
+        bottom: -10rem;
       margin:auto;
     }
   }
