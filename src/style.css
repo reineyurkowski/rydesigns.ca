@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: test09;
-  src: './test09v1r31.otf';
+  src: url('./src/assets/test09v1r31.otf');
 }
 
 * {
