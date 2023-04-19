@@ -1,6 +1,6 @@
 import React from "react";
 
-import assets from "./assets/assetIndex";
+import assets from "../assets/assetIndex";
 
 import './style.css'
 import './home2.css'

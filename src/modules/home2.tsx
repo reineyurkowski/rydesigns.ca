@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import React from 'react';
 
 //assets
-import assets from './assets/assetIndex'
+import assets from '../assets/assetIndex'
 
 function Home2() {
   function SectionImage(

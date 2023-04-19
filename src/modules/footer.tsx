@@ -1,6 +1,6 @@
 import './footer.css'
 
-import assets from './assets/assetIndex';
+import assets from '../assets/assetIndex';
 
 function Footer() {
   

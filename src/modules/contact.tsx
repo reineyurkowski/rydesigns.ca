@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState, useRef } from "react";
 
-import assets from "./assets/assetIndex";
+import assets from "../assets/assetIndex";
 
 import './contact.css'
 
