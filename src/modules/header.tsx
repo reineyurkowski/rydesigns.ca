@@ -3,7 +3,7 @@ import './header.css'
 import { useState, useEffect, useRef } from "react";
 
 //images
-import assets from './assets/assetIndex';
+import assets from '../assets/assetIndex';
 
 
 

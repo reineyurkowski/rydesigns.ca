@@ -10,55 +10,45 @@ import {
 import "./style.css"
 
 //components
-import About from './about'
-import CallOrEmailDot from './callOrEmailDot'
-import Contact from './contact'
-import Footer from './footer'
-import Four04 from './404'
-import Header from './header'
-import Home from './home'
-import Home2 from './home2'
-import MouseShadow from './mouseShadow'
-import Pricing from './pricing'
-import Welcome from './welcome'
+import Modules from './src/modules'
 
 //assets
-import assets from './assets/assetIndex'
+import assets from './src/assets/assetIndex'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home2 />,
+    element: <Modules.Home2 />,
   },
   {
     path: '/home',
-    element: <Home2 />,
+    element: <Modules.Home2 />,
   },
   {
     path: '/about',
-    element: <About />,
+    element: <Modules.About />,
   },
   {
     path: '/pricing',
-    element: <Pricing />,
+    element: <Modules.Pricing />,
   },
   {
     path: '/contact',
-    element: <Contact />,
+    element: <Modules.Contact />,
   },
   {
     path: '*',
-    element: <Four04 />,
+    element: <Modules.Four04 />,
   },
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Header />
+    <Modules.Header />
       <RouterProvider router={router} />
-    <Footer />
-    <CallOrEmailDot />
+    <Modules.Footer />
+    <Modules.CallOrEmailDot />
     {/* <MouseShadow /> */}
   </React.StrictMode>,
 )
