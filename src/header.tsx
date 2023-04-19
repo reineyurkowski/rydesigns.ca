@@ -50,16 +50,16 @@ function Header() {
           </a>
         </div>
         <a href='/'>
-          <div id='homeHeader' className='headerItem headerItemWithText'> home </div>
+          <div id='homeHeader' className='headerItem headerItemWithText'> Home </div>
         </a>
         <a href='/about'>
-          <div id='aboutHeader' className='headerItem headerItemWithText'> about </div>
+          <div id='aboutHeader' className='headerItem headerItemWithText'> About </div>
         </a>   
         <a href='/pricing'>
-          <div id='pricingHeader' className='headerItem headerItemWithText'> pricing </div>
+          <div id='pricingHeader' className='headerItem headerItemWithText'> Pricing </div>
         </a>   
         <a href='/contact'>
-          <div id='contactHeader' className='headerItem headerItemWithText'> contact </div>
+          <div id='contactHeader' className='headerItem headerItemWithText'> Contact </div>
         </a>   
       </div>
     </header>
