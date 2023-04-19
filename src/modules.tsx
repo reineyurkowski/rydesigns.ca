@@ -8,6 +8,7 @@ import Home from './modules/home';
 import Home2 from './modules/home2';
 import MouseShadow from './modules/mouseShadow';
 import Pricing from './modules/pricing';
+import Pricing2 from './modules/pricing2';
 import Welcome from './modules/welcome';
 
 // const Modules = [
