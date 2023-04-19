@@ -20,8 +20,9 @@
 
 @font-face {
   font-family: test09;
-  src: local('type09'), 
-  url(@/assets/styles/fonts/OpenSans-Bold.ttf) format('openTypeFormat');
+  src: local('type09'), url(@/assets/test09v1r31.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
