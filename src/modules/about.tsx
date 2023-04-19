@@ -2,9 +2,7 @@ import React from "react";
 
 import assets from "../assets/assetIndex";
 
-import './style.css'
-import './home2.css'
-import './about.css'
+import '../style.css'
 
 function About() {
   function SectionImage(

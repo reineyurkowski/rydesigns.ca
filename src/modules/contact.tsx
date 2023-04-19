@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 
 import assets from "../assets/assetIndex";
 
-import './contact.css'
+import '../style.css'
 
 function Contact() {
   return (

@@ -1,7 +1,8 @@
 import React from "react";
 
-import './404.css'
 import assets from "../assets/assetIndex";
+
+import '../style.css'
 
 function Four04() {
 

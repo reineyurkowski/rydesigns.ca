@@ -1,4 +1,4 @@
-import './footer.css'
+import '../style.css'
 
 import assets from '../assets/assetIndex';
 

@@ -1,5 +1,5 @@
-import './home.css'
-import './home2.css'
+import '../style.css'
+
 import { useState, useEffect, useRef } from 'react';
 import React from 'react';
 

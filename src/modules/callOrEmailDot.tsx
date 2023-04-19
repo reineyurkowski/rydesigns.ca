@@ -1,5 +1,6 @@
 import assets from '../assets/assetIndex';
-import './callOrEmailDot.css'
+
+import '../style.css'
 
 function CallOrEmailDot() {
 

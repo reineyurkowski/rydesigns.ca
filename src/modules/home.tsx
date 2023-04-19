@@ -1,4 +1,4 @@
-import './home.css'
+import '../style.css'
 
 function ArrayToUl(input:string[], listId = "noIdAssigned") 
   {

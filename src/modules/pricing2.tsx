@@ -2,9 +2,7 @@ import React from "react";
 
 import assets from "../assets/assetIndex";
 
-import './style.css'
-import './about.css'
-import './pricing.css'
+import '../style.css'
 
 function Pricing2() {
 
