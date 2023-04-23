@@ -31,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/pricing',
-    element: <Modules.Pricing />,
+    element: <Modules.Pricing2 />,
   },
   {
     path: '/contact',

@@ -6,8 +6,7 @@
     width: 3.2rem;
   background-color: var(--color1);
   border-radius: 100%;
-  box-shadow: 
-              2px 2px 0px ;
+  box-shadow: 2px 2px 0px ;
   text-align: center;
   position: sticky;
     bottom: 1rem;
@@ -26,5 +25,5 @@
 
 #callOrEmailDot img {
   max-width: 50%;
-  transform:translateY(-0.2rem);
+  transform:translateY(-0.35rem);
 }

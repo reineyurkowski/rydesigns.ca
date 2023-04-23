@@ -38,5 +38,6 @@ export default {
   Home2,
   MouseShadow,
   Pricing,
+  Pricing2,
   Welcome,
 };

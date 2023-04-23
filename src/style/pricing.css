@@ -9,12 +9,25 @@
     animation-duration: 4s;
     animation-timing-function: linear; 
     animation-iteration-count: infinite;
-  overflow: hidden;
   display: block;
-  padding: 3rem;
+    margin: auto;
+    overflow: hidden;
+    padding: 3rem;
+  text-align: center;
 }
 @media (max-width: 600px) {
   #pricing {
     background-size: 15vmin 15vmin;   
+  }
+}
+
+#pricing p {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  #pricing p {
+    width: 100%;
   }
 }
