@@ -239,7 +239,7 @@ h3 {
                 drop-shadow(10px -10px) 
                 drop-shadow(-10px 10px) 
                 drop-shadow(-10px -10px); */
-                hue-rotate(-190deg)
+                hue-rotate(-105deg)
                 brightness(3)
         ;
         scale: 1;

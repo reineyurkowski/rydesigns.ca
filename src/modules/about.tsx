@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 import assets from "../assets/assetIndex";
 
@@ -77,6 +78,25 @@ function About() {
       </div>
     );  
   }
+
+
+  function DynamicButton() {
+    const [textContent, setTextContent] = useState(<a>Let's Connect!</a>);
+  
+    function handleClick() {
+      setTextContent(
+        <div style={{display: 'flex'}}>
+          <a href="tel:+1-(250)-216-2556">
+            <div>call</div>
+          </a>
+          <a href="mailto:reineyurkowski@gmail.com">
+            <div>email</div>
+          </a>
+        </div>
+      )
+    }
+  }
+  
 
   return (
     <div id="about">
@@ -197,6 +217,14 @@ function About() {
             />
           </div>
         </div>
+      </div>
+      <div className='ctaSection'>
+          <h3>Interested in working together?</h3>
+          <a href="mailto:reineyurkowski@gmail.com">
+            <div id='textButton'> 
+              Let's Connect!
+            </div>
+          </a>
       </div>
     </div>
   )
