@@ -96,7 +96,7 @@ function Portfolio() {
               'Posters And Covers'
             )}
             {Img(
-              'https://cdnb.artstation.com/p/assets/images/images/062/948/917/large/reine-yurkowski-preform.jpg?1684333022',
+              'https://cdnb.artstation.com/p/assets/images/images/062/948/907/large/reine-yurkowski-obake7.jpg?1684332997',
               'Posters And Covers'
             )}          
           </div>
