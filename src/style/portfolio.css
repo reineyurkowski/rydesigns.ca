@@ -1,0 +1,7 @@
+#businessCardsDisplay {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+    #businessCardsDisplay>div>img {
+      max-width: 100%;
+    }

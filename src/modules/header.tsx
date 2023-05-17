@@ -16,24 +16,12 @@ function Header() {
   const [scrollPos, setScrollPos] = useState(0);
   const [scrollDirection, setScrollDirection] = useState('none');
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const currentScrollPos = window.pageYOffset;
-  //     if (currentScrollPos > scrollPos) {
-  //       setScrollDirection('down');
-  //       setHeaderHeight('0.3rem');
-  //     } else {
-  //       setScrollDirection('up');
-  //       setHeaderHeight('auto');
-  //     }
-  //     setScrollPos(currentScrollPos);
-  //   };
+  let ChangeHeight = () => {
+    
+  }
 
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, [scrollPos]);
 
-  // Render your header component with scrollDirection as a prop
+
   return (
     <header 
       id='header' 
@@ -42,7 +30,7 @@ function Header() {
     >
       <div>
         <div id='logoHeader' className='headerItem'> 
-          <a href='/home'>
+          <a onClick={ChangeHeight}>
             <img
               src={assets.initialsThicc}
               alt='reineYurkowskiSignature'
@@ -60,6 +48,9 @@ function Header() {
         </a>   
         <a href='/contact'>
           <div id='contactHeader' className='headerItem headerItemWithText'> Contact </div>
+        </a>   
+        <a href='/portfolio'>
+          <div id='contactHeader' className='headerItem headerItemWithText'> Portfolio </div>
         </a>   
       </div>
     </header>

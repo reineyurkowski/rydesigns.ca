@@ -21,7 +21,7 @@ header>div {
 
   display: grid;
   gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 
   /* from home2.css */
   background:
@@ -50,6 +50,7 @@ header>div {
 #logoHeader {
   filter: invert(1);
 }
+
 #logoHeader img {
   max-height: 2rem;
   padding-top: 1rem;

@@ -8,6 +8,7 @@
 @import './style/home.css';
 @import './style/home2.css';
 @import './style/pricing.css';
+@import './style/portfolio.css';
 
 :root {
   --color1: #a566d9;
@@ -79,6 +80,15 @@ body {
   color: var(--textColorTitles);
   /* text-shadow:  var(--shadowColor) 0.25rem 0.2rem;/
 } */
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5{
+  font-size: 1.5rem;
+}
 
 .interested {
   font-size: xx-large;

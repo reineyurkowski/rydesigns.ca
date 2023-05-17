@@ -14,6 +14,7 @@ import Modules from './src/modules'
 
 //assets
 import assets from './src/assets/assetIndex'
+import modules from './src/modules'
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Modules.Contact />,
+  },
+  {
+    path: '/portfolio',
+    element: <Modules.Portfolio />,
   },
   {
     path: '*',
