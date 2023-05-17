@@ -125,19 +125,27 @@ function Portfolio() {
           </div>
           <br/><br/>
         </div>
-      </div>
-
-      <div style={{marginLeft:'5rem'}}>
-        <h2>Interactive Coding</h2> 
+        
         <div>
-          <FizzBuzz />
+          <h4>Motion Graphics And 3d</h4>
+          <div id="motionGraphics">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wUxt7lloQDM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/muVNqgQTc9A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/q5isJOubmp0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          </div>
         </div>
-      </div>
-      
-      <div>
-        <h2>3d Elements Aswell</h2> 
         <div>
-          <ThreeScene />
+          <h2>Interactive 3d Elements</h2> 
+          <div>
+            <ThreeScene />
+            <p>click to catch it!</p>
+          </div>
+        </div>
+        <div style={{marginLeft:'5rem'}}>
+          <h2>Interactive Code Systems</h2> 
+          <div>
+            <FizzBuzz />
+          </div>
         </div>
       </div>
     </div>

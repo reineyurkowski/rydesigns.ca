@@ -5,8 +5,8 @@ const FizzBuzz = () => {
     fizz: 3,
     buzz: 5,
   });
-  const [newKey, setNewKey] = useState<string>('');
-  const [newValue, setNewValue] = useState<number>(0);
+  const [newKey, setNewKey] = useState<string>('Fazz');
+  const [newValue, setNewValue] = useState<number>(7);
   const [fizzBuzzNotification, setFizzBuzzNotification] = useState<string>('nothing to warn about!');
   const [fizzBuzzOutput, setFizzBuzzOutput] = useState<string>('');
 
@@ -99,6 +99,7 @@ const FizzBuzz = () => {
         type="text"
         id="fname"
         name="fname"
+        placeholder='7'
         value={newValue}
         onChange={(e) => setNewValue(parseInt(e.target.value))}
       />
