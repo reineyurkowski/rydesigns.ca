@@ -43,11 +43,11 @@ function Portfolio() {
               'businessCards'
             )}
             {Img(
-              'https://cdnb.artstation.com/p/assets/images/images/062/193/171/large/reine-yurkowski-artboard1.jpg?1682555994',
+              'https://cdnb.artstation.com/p/assets/images/images/062/193/175/large/reine-yurkowski-artboard2.jpg?168255600',
               'businessCards'
             )}
             {Img(
-              'https://cdnb.artstation.com/p/assets/images/images/062/193/175/large/reine-yurkowski-artboard2.jpg?168255600',
+              'https://cdnb.artstation.com/p/assets/images/images/062/193/171/large/reine-yurkowski-artboard1.jpg?1682555994',
               'businessCards'
             )}
           </div>
