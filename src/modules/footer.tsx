@@ -99,7 +99,7 @@ function Footer() {
         <div id="footerContact">
           <br/>
           <a href="tel:+1-(250)-216-2556">
-            phone: <br/> +1-(250)-256-2556
+            phone: <br/> +1-(250)-216-2556
           </a>
           <a href="mailto:reineyurkowski@gmail.com">
             email: <br/> reineyurkowski@gmail.com
