@@ -2,12 +2,14 @@ import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 
 const ThreeScene = () => {
-  const containerRef = useRef(null);
-  const mouse = new THREE.Vector2();
-  const target = new THREE.Vector2();
-  const windowHalf = new THREE.Vector2(window.innerWidth / 2, window.innerHeight / 2);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const mouse = useRef(new THREE.Vector2());
+  const target = useRef(new THREE.Vector2());
+  const windowHalf = useRef(new THREE.Vector2(window.innerWidth / 2, window.innerHeight / 2));
 
   useEffect(() => {
+    if (!containerRef.current) return;
+
     // Set up the Three.js scene
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(22, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -33,8 +35,8 @@ const ThreeScene = () => {
       torus.rotation.y += 0.01;
 
       // Update camera position based on mouse movement
-      camera.position.x += (mouse.x - camera.position.x) * 0.05;
-      camera.position.y += (-mouse.y - camera.position.y) * 0.05;
+      camera.position.x += (target.current.x - camera.position.x) * 0.05;
+      camera.position.y += (-target.current.y - camera.position.y) * 0.05;
       camera.lookAt(scene.position);
 
       // Render the scene
@@ -43,27 +45,37 @@ const ThreeScene = () => {
     animate();
 
     // Event listeners for mouse interactions
-    const onMouseMove = (event) => {
-      mouse.x = (event.clientX - windowHalf.x) / (windowHalf.x * 2);
-      mouse.y = (event.clientY - windowHalf.y) / (windowHalf.y * 2);
+    const onMouseMove = (event: MouseEvent) => {
+      mouse.current.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.current.y = -(event.clientY / window.innerHeight) * 2 + 1;
+      target.current = mouse.current.clone();
+    };
+
+    const onTouchMove = (event: TouchEvent) => {
+      const touch = event.touches[0];
+      mouse.current.x = (touch.clientX / window.innerWidth) * 2 - 1;
+      mouse.current.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+      target.current = mouse.current.clone();
     };
 
     const onWindowResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth - 50, window.innerHeight);
-      windowHalf.set(window.innerWidth / 2, window.innerHeight / 2);
+      windowHalf.current.set(window.innerWidth / 2, window.innerHeight / 2);
     };
 
     window.addEventListener('mousemove', onMouseMove, false);
+    window.addEventListener('touchmove', onTouchMove, false);
     window.addEventListener('resize', onWindowResize, false);
 
     // Clean up on component unmount
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('touchmove', onTouchMove);
       window.removeEventListener('resize', onWindowResize);
       renderer.dispose();
-      containerRef.current.removeChild(renderer.domElement);
+      containerRef.current!.removeChild(renderer.domElement);
     };
   }, []);
 
