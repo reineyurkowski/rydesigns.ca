@@ -30,22 +30,57 @@ function Portfolio() {
         <div>
           <h4>Business Cards</h4>
           <div id="businessCardsDisplay">
-            {Img(
-              'https://cdna.artstation.com/p/assets/images/images/062/338/076/large/reine-yurkowski-screenshot-2023-04-30-at-7-44-59-pm.jpg?1682909116' ,
+            {Img('https://cdna.artstation.com/p/assets/images/images/062/338/076/large/reine-yurkowski-screenshot-2023-04-30-at-7-44-59-pm.jpg?1682909116' ,
               'businessCards'
             )}
-            {Img(
-              'https://cdna.artstation.com/p/assets/images/images/062/337/420/large/reine-yurkowski-screenshot-2023-04-30-at-7-10-47-pm.jpg?1682907107',
+            {Img('https://cdna.artstation.com/p/assets/images/images/062/337/420/large/reine-yurkowski-screenshot-2023-04-30-at-7-10-47-pm.jpg?1682907107',
               'businessCards'
             )}
-            {Img(
-              'https://cdnb.artstation.com/p/assets/images/images/062/337/421/large/reine-yurkowski-screenshot-2023-04-30-at-7-11-30-pm.jpg?1682907115',
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/337/421/large/reine-yurkowski-screenshot-2023-04-30-at-7-11-30-pm.jpg?1682907115',
               'businessCards'
             )}
-            {Img(
-              'https://cdnb.artstation.com/p/assets/images/images/062/193/171/large/reine-yurkowski-artboard1.jpg?1682555994',
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/193/171/large/reine-yurkowski-artboard1.jpg?1682555994',
               'businessCards'
             )}
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/335/257/large/reine-yurkowski-a1-f.jpg?1682899348',
+              'businessCards'
+            )}
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/335/255/medium/reine-yurkowski-a1-b.jpg?1682899340',
+              'businessCards'
+            )}
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/335/261/large/reine-yurkowski-b1-f.jpg?1682899358',
+              'businessCards'
+            )}
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/335/259/medium/reine-yurkowski-b1-b.jpg?1682899352',
+              'businessCards'
+            )}
+            {Img('https://cdna.artstation.com/p/assets/images/images/062/335/266/medium/reine-yurkowski-c1-f.jpg?1682899370',
+              'businessCards'
+            )}
+            {Img('https://cdna.artstation.com/p/assets/images/images/062/335/264/medium/reine-yurkowski-c1-b.jpg?1682899363',
+              'businessCards'
+            )}
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/335/269/medium/reine-yurkowski-c2-f.jpg?1682899378',
+              'businessCards'
+            )}
+            {Img('https://cdna.artstation.com/p/assets/images/images/062/335/268/medium/reine-yurkowski-c2-b.jpg?1682899373',
+              'businessCards'
+            )}
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/335/273/medium/reine-yurkowski-d1-f.jpg?1682899384',
+              'businessCards'
+            )}
+            {Img('https://cdna.artstation.com/p/assets/images/images/062/335/272/medium/reine-yurkowski-d1-b.jpg?1682899381',
+              'businessCards'
+            )}
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/335/277/medium/reine-yurkowski-e1-f.jpg?1682899407',
+              'businessCards'
+            )}
+            {Img('https://cdnb.artstation.com/p/assets/images/images/062/337/311/medium/reine-yurkowski-e1-b.jpg?1682906764',
+              'businessCards'
+            )}
+           
+            
+            {/* {Img('','')} */}
           </div>
           <a
             href='https://www.artstation.com/artwork/n04PdK'

@@ -160,7 +160,7 @@ function Home2() {
         <TypingEffect />
       </div> */}
       <div className='ctaSection'>
-          <h3>Want To See My My Wordpress Site?</h3>
+          <h3>Want To See My Wordpress Site?</h3>
           <a href='https://reineyurkowski.wordpress.com/' target="_blank">
             <div id='textButton'> 
               Click Here!
